@@ -24,7 +24,8 @@ server {
             proxy_set_header X-Real-IP $remote_addr;    
             proxy_set_header X-Scheme $scheme;    
             proxy_pass http://localhost:8001/;    
-    }
+                    }
+                }
 }
 
 #https://khashtamov.com/ru/how-to-deploy-django-app/
