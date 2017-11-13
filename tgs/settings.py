@@ -74,17 +74,25 @@ WSGI_APPLICATION = 'tgs.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'tgsdb',
+#         'USER' : 'tgs',
+#         'PASSWORD' : '',
+#         'HOST' : '',
+#         'PORT' : '',
+        
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'tgsdb',
-        'USER' : 'tgs',
-        'PASSWORD' : '',
-        'HOST' : '',
-        'PORT' : '',
-        
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'tgd_db',
     }
 }
+
+
 
 
 # Password validation'django.db.backends.postgresql'
