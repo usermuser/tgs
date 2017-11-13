@@ -77,9 +77,9 @@ WSGI_APPLICATION = 'tgs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_db',
+        'NAME': 'tgsdb',
         'USER' : 'tgs',
-        'PASSWORD' : 'trewqa',
+        'PASSWORD' : '',
         'HOST' : '',
         'PORT' : '',
         
