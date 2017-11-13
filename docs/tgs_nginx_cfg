@@ -10,11 +10,7 @@ server {
 
     location /static/ {
         alias /home/tgs/tgs/static/;
-    }
-
-#    location /blog {
-#        try_files $uri @proxy_to_app;
-#    }
+                    }
 
     location /tgs {
         location /tgs {
@@ -27,20 +23,3 @@ server {
                     }
                 }
 }
-
-#https://khashtamov.com/ru/how-to-deploy-django-app/
-#server {
-#        listen 80;
-#        listen 443 ssl;
-#        server_name tum0xa.dlinkddns.com;
-#        ssl_certificate /etc/letsencrypt/live/bot.khashtamov.com/fullchain.pem;
-#        ssl_certificate_key /etc/letsencrypt/live/bot.khashtamov.com/privkey.pem;
-#        location /tgs {
-#            proxy_set_header Host $http_host;    
-#            proxy_redirect off;    
-#            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;    
-#            proxy_set_header X-Real-IP $remote_addr;    
-#            proxy_set_header X-Scheme $scheme;    
-#            proxy_pass http://localhost:8001/;    
-#    }
-#}
