@@ -25,7 +25,10 @@ SECRET_KEY = '=7eojy$$=8i+0ax2=^r2vqd=8q!=(yuz#tc3@6c-bow%q@0@*a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [u'192.168.0.3',
+		u'tum0xa.dlinkddns.com',]
+
+		
 
 
 # Application definition
@@ -77,7 +80,7 @@ WSGI_APPLICATION = 'tgs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'django_db',
+        'NAME': 'tgsdb',
         'USER' : 'tgs',
         'PASSWORD' : 'trewqa',
         'HOST' : '',

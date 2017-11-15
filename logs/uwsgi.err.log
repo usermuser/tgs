@@ -1,0 +1,40 @@
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Wed Nov 15 23:37:32 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x20bbc60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x20bbc60 pid: 32329 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 32329)
+spawned uWSGI worker 1 (pid: 32342, cores: 2)
+spawned uWSGI worker 2 (pid: 32343, cores: 2)
+spawned uWSGI worker 3 (pid: 32344, cores: 2)
+spawned uWSGI worker 4 (pid: 32345, cores: 2)
+[pid: 32345|app: 0|req: 1/1] 88.206.38.244 () {42 vars in 742 bytes} [Wed Nov 15 18:38:03 2017] GET / => generated 1716 bytes in 124 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
+[pid: 32345|app: 0|req: 2/2] 88.206.38.244 () {42 vars in 742 bytes} [Wed Nov 15 18:38:05 2017] GET / => generated 1716 bytes in 37 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 1)
+[pid: 32345|app: 0|req: 3/3] 88.206.38.244 () {42 vars in 742 bytes} [Wed Nov 15 18:38:06 2017] GET / => generated 1716 bytes in 34 msecs (HTTP/1.1 200) 3 headers in 95 bytes (1 switches on core 0)
