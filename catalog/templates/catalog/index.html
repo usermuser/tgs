@@ -1,0 +1,29 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tigers</title>
+    </head>
+
+<body>
+{% if products %}
+    <ul>
+    {% for product in products %}
+        <li>
+            <p>product name: {{product.name}}, </p>
+            <p>product slug: {{product.slug}}, </p>
+            <p>product description: {{product.description}},</p>
+            <p>product manufacturer: {{product.manufacturer}},</p>
+            <p>product price: {{product.price}},</p>
+            <p>product available: {{product.available}}</p>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>Нет ни одного продукта</p>
+{% endif %}
+
+</body>
+</html>
