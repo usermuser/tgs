@@ -1,4 +1,4 @@
-# -*- coding:utf-8 -*-
+
 
 {% load static %}
 <html lang="en">
@@ -279,44 +279,60 @@
 <main>
     <section class="container">
 
-
-        <!-- Slider -->
-        <div class="fr-slider-wrap">
-            <div class="fr-slider">
-                <ul class="slides">
-                    <li>
-                        <img src="img/slider/slide1.jpg" alt="">
-                        <div class="fr-slider-cont">
-                            <h3>MEGA SALE -30%</h3>
-                            <p>Winter collection for women's. <br>We all have choices for you. Check it out!</p>
-                            <p class="fr-slider-more-wrap">
-                                <a class="fr-slider-more" href="#">View collection</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/slider/slide1.jpg" alt="">
-                        <div class="fr-slider-cont">
-                            <h3>NEW COLLECTION</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Aliquam consequuntur dolorem doloribus fuga harum</p>
-                            <p class="fr-slider-more-wrap">
-                                <a class="fr-slider-more" href="#">Shopping now</a>
-                            </p>
-                        </div>
-                    </li>
-                    <li>
-                        <img src="img/slider/slide1.jpg" alt="">
-                        <div class="fr-slider-cont">
-                            <h3>SUMMER TRENDS</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Aliquam consequuntur dolorem doloribus fuga harum</p>
-                            <p class="fr-slider-more-wrap">
-                                <a class="fr-slider-more" href="#">Start shopping</a>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
+ <!-- Banners -->
+ <div class="banners-wrap">
+    <div class="banners-list">
+        <div class="banner-i style_11">
+            <span class="banner-i-bg" style="background: url(http://placehold.it/560x360);"></span>
+            <div class="banner-i-cont">
+                <p class="banner-i-subttl">НОВАЯ КОЛЛЕКЦИЯ</p>
+                <h3 class="banner-i-ttl">МУЖЧИНЫ<br>CLOTHING</h3>
+                <p class="banner-i-link"><a href="section.html">Подробнее</a></p>
             </div>
         </div>
+        <div class="banner-i style_22">
+            <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
+            <div class="banner-i-cont">
+                <p class="banner-i-subttl">ЗИМНЯЯ КОЛЛЕКЦИЯ</p>
+                <h3 class="banner-i-ttl">ШУБЫ<br>ПУХОВИКИ</h3>
+                <p class="banner-i-link"><a href="section.html">Показать больше</a></p>
+            </div>
+        </div>
+        <div class="banner-i style_21">
+            <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
+            <div class="banner-i-cont">
+                <h3 class="banner-i-ttl">ШУБЫ<br>МУТОН</h3>
+                <p class="banner-i-link"><a href="section.html">К каталогу</a></p>
+            </div>
+        </div>
+        <div class="banner-i style_21">
+            <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
+            <div class="banner-i-cont">
+                <h3 class="banner-i-ttl">МУЖЧИНАМ <br>И ЖЕНЩИНАМ</h3>
+                <p class="banner-i-link"><a href="section.html">View More</a></p>
+            </div>
+        </div>
+        <div class="banner-i style_22">
+            <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
+            <div class="banner-i-cont">
+                <p class="banner-i-subttl">АКЦИЯ -20%</p>
+                <h3 class="banner-i-ttl">КУРТКИ<br>КОЛЛЛЕКЦИЯ</h3>
+                <p class="banner-i-link"><a href="section.html">Купить сейчас</a></p>
+            </div>
+        </div>
+        <div class="banner-i style_12">
+            <span class="banner-i-bg" style="background: url(http://placehold.it/560x360);"></span>
+            <div class="banner-i-cont">
+                <p class="banner-i-subttl">НОРКОВЫЕ ШУБЫ</p>
+                <h3 class="banner-i-ttl">ЭЛИТНЫЕ МОДЕЛИ</h3>
+                <p>A great selection of dresses, <br>blouses and women's suits</p>
+                <p class="banner-i-link"><a href="section.html">ПОСМОТРЕТЬ</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Slider -->
+        
 
 
         <!-- Popular Products -->
@@ -359,8 +375,8 @@
                             </p>
                             <div class="prod-i-skuwrapcolor">
                                 <ul class="prod-i-skucolor">
-                                    <li class="bx_active"><img src="img/color/red.jpg" alt="Red"></li>
-                                    <li><img src="img/color/blue.jpg" alt="Blue"></li>
+                                    <li class="bx_active"><img src="static/img/color/red.jpg" alt="Red"></li>
+                                    <li><img src="static/img/color/blue.jpg" alt="Blue"></li>
                                 </ul>
                             </div>
                         </li>
@@ -1093,8 +1109,8 @@
                             </p>
                             <div class="prod-i-skuwrapcolor">
                                 <ul class="prod-i-skucolor">
-                                    <li class="bx_active"><img src="img/color/red.jpg" alt="Red"></li>
-                                    <li><img src="img/color/blue.jpg" alt="Blue"></li>
+                                    <li class="bx_active"><img src="static/img/color/red.jpg" alt="Red"></li>
+                                    <li><img src="static/img/color/blue.jpg" alt="Blue"></li>
                                 </ul>
                             </div>
                         </li>
@@ -1838,62 +1854,46 @@
         </div><!-- .fr-pop-wrap -->
 
 
-        <!-- Banners -->
-        <div class="banners-wrap">
-            <div class="banners-list">
-                <div class="banner-i style_11">
-                    <span class="banner-i-bg" style="background: url(http://placehold.it/560x360);"></span>
-                    <div class="banner-i-cont">
-                        <p class="banner-i-subttl">NEW COLLECTION</p>
-                        <h3 class="banner-i-ttl">MEN'S<br>CLOTHING</h3>
-                        <p class="banner-i-link"><a href="section.html">View More</a></p>
-                    </div>
-                </div>
-                <div class="banner-i style_22">
-                    <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
-                    <div class="banner-i-cont">
-                        <p class="banner-i-subttl">GREAT COLLECTION</p>
-                        <h3 class="banner-i-ttl">CLOTHING<br>ACCESSORIES</h3>
-                        <p class="banner-i-link"><a href="section.html">Show more</a></p>
-                    </div>
-                </div>
-                <div class="banner-i style_21">
-                    <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
-                    <div class="banner-i-cont">
-                        <h3 class="banner-i-ttl">SPORT<br>CLOTHES</h3>
-                        <p class="banner-i-link"><a href="section.html">Go to catalog</a></p>
-                    </div>
-                </div>
-                <div class="banner-i style_21">
-                    <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
-                    <div class="banner-i-cont">
-                        <h3 class="banner-i-ttl">MEN AND <br>WOMEN SHOES</h3>
-                        <p class="banner-i-link"><a href="section.html">View More</a></p>
-                    </div>
-                </div>
-                <div class="banner-i style_22">
-                    <span class="banner-i-bg" style="background: url(http://placehold.it/270x360);"></span>
-                    <div class="banner-i-cont">
-                        <p class="banner-i-subttl">DISCOUNT -20%</p>
-                        <h3 class="banner-i-ttl">HATS<br>COLLECTION</h3>
-                        <p class="banner-i-link"><a href="section.html">Shop now</a></p>
-                    </div>
-                </div>
-                <div class="banner-i style_12">
-                    <span class="banner-i-bg" style="background: url(http://placehold.it/560x360);"></span>
-                    <div class="banner-i-cont">
-                        <p class="banner-i-subttl">STYLISH CLOTHES</p>
-                        <h3 class="banner-i-ttl">WOMEN'S COLLECTION</h3>
-                        <p>A great selection of dresses, <br>blouses and women's suits</p>
-                        <p class="banner-i-link"><a href="section.html">View More</a></p>
-                    </div>
-                </div>
+       
+
+        <div class="fr-slider-wrap">
+            <div class="fr-slider">
+                <ul class="slides">
+                    <li>
+                        <img src="static/img/slider/slide1.jpg" alt="">
+                        <div class="fr-slider-cont">
+                            <h3>РАССПРОДАЖА -30%</h3>
+                            <p>Зимняя коллекция для женищин. <br>Мы обязателььно что-нибудь для Вас подберем.</p>
+                            <p class="fr-slider-more-wrap">
+                                <a class="fr-slider-more" href="#">Просмотреть коллекцию</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="static/img/slider/slide1.jpg" alt="">
+                        <div class="fr-slider-cont">
+                            <h3>НОВАЯ КОЛЛЕКЦИЯ</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Aliquam consequuntur dolorem doloribus fuga harum</p>
+                            <p class="fr-slider-more-wrap">
+                                <a class="fr-slider-more" href="#">Shopping now</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="static/slider/slide1.jpg" alt="">
+                        <div class="fr-slider-cont">
+                            <h3>ШУБЫ В ТРЕНДЕ</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Aliquam consequuntur dolorem doloribus fuga harum</p>
+                            <p class="fr-slider-more-wrap">
+                                <a class="fr-slider-more" href="#">Start shopping</a>
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-
-
         <!-- Special offer -->
-        <div class="discounts-wrap">
+        <!-- <div class="discounts-wrap">
             <h3 class="component-ttl"><span>Special offer</span></h3>
             <div class="flexslider discounts-list">
                 <ul class="slides">
@@ -1991,7 +1991,7 @@
                 <p>Special offer!<br>Limited time only</p>
                 <a href="catalog-list.html">Shop now</a>
             </div>
-        </div>
+        </div> -->
 
 
         <!-- Latest news -->
@@ -2038,7 +2038,7 @@
 
 
         <!-- Testimonials -->
-        <div class="reviews-wrap">
+        <!-- <div class="reviews-wrap">
             <div class="reviewscar-wrap">
                 <div class="swiper-container reviewscar">
                     <div class="swiper-wrapper">
@@ -2145,7 +2145,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Subscribe Form -->
         <div class="newsletter">
@@ -2157,7 +2157,7 @@
             </form>
         </div>
 
-        <!-- Quick View Product - start -->
+        Quick View Product - start
         <div class="qview-modal">
             <div class="prod-wrap">
                 <a href="product.html">
@@ -2332,13 +2332,13 @@
 
 <!-- Footer - start -->
 <footer class="footer-wrap">
-    <div class="footer-top">
+    <!-- <div class="footer-top">
         <div class="container">
             <div class="row">
                 <div class="companyinfo">
                     <a href="index.html">
-                        <img src="img/logo-b.png" alt="AllStore - MultiConcept eCommerce Responsive HTML5 Template">
-                        AllStore - MultiConcept eCommerce Responsive HTML5 Template
+                        <img src="static/img/tigers-logo-b.png" alt="Tigers - Кожа и Меха">
+                        Tigers - Интернет-магазин одежды из кожи и меха
                     </a>
                 </div>
                 <div class="f-block-list">
@@ -2352,8 +2352,8 @@
                                     <i class="fa fa-info-circle"></i>
                                 </div>
                             </a>
-                            <p class="f-info-ttl">About us</p>
-                            <p>Shipping and payment information.</p>
+                            <p class="f-info-ttl">О нас</p>
+                            <p>Оплата и доставка</p>
                         </div>
                     </div>
                     <div class="f-block-wrap">
@@ -2366,8 +2366,8 @@
                                     <i class="fa fa-phone"></i>
                                 </div>
                             </a>
-                            <p class="f-info-ttl">Ask questions</p>
-                            <p>We call back within 10 minutes</p>
+                            <p class="f-info-ttl">Задать вопрос</p>
+                            <p>Мы перезвоним через 10 минут</p>
                         </div>
                     </div>
                     <div class="f-block-wrap">
@@ -2429,65 +2429,65 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <div class="container f-menu-list">
         <div class="row">
             <div class="f-menu">
                 <h3>
-                    About us
+                    О нас
                 </h3>
                 <ul class="nav nav-pills nav-stacked">
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="catalog-list.html">Catalog</a></li>
-                    <li><a href="elements.html">Elements</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+                    <li class="active"><a href="#">Главная</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">АКЦИИ</a></li>
+                    <li><a href="#">Рассрочка</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
             <div class="f-menu">
                 <h3>
-                    Shop
+                    Магазин
                 </h3>
                 <ul class="nav nav-pills nav-stacked">
-                    <li><a href="catalog-list.html">Women</a></li>
-                    <li><a href="catalog-list.html">Men</a></li>
-                    <li><a href="catalog-list.html">Kids</a></li>
-                    <li><a href="catalog-list.html">Shoes</a></li>
-                    <li><a href="catalog-list.html">Accessories</a></li>
+                    <li><a href="#">Женщины</a></li>
+                    <li><a href="#">Мужчины</a></li>
+                    <li><a href="#">Шубы</a></li>
+                    <li><a href="#">Дубленки</a></li>
+                    <li><a href="#">Куртки и пуховики</a></li>
                 </ul>
             </div>
             <div class="f-menu">
                 <h3>
-                    Information
+                    Информация
                 </h3>
                 <ul class="nav nav-pills nav-stacked">
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><a href="blog.html">News</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="blog.html">Articles</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="blog.html">Статьи</a></li>
+                    <li><a href="blog.html">Новости</a></li>
+                    <li><a href="reviews.html">Обзоры</a></li>
+                    <li><a href="blog.html">Блог</a></li>
+                    <li><a href="contacts.html">Форум</a></li>
                 </ul>
             </div>
             <div class="f-menu">
                 <h3>
-                    Pages
+                    РАЗНОЕ
                 </h3>
                 <ul class="nav nav-pills nav-stacked">
-                    <li><a href="contacts.html">About us</a></li>
-                    <li><a href="contacts.html">Delivery</a></li>
-                    <li><a href="contacts.html">Guarantees</a></li>
-                    <li><a href="contacts.html">Contacts</a></li>
-                    <li><a href="404.html">Page 404</a></li>
+                    <li><a href="contacts.html">Способы оплаты</a></li>
+                    <li><a href="contacts.html">Доставка</a></li>
+                    <li><a href="contacts.html">Гарантии</a></li>
+                    <li><a href="contacts.html">Кредит и рассрочка</a></li>
+                    
                 </ul>
             </div>
             <div class="f-subscribe">
-                <h3>Subscribe to news</h3>
+                <h3>Подписаться на новости</h3>
                 <form class="f-subscribe-form" action="#">
                     <input placeholder="Your e-mail" type="text">
                     <button type="submit"><i class="fa fa-paper-plane"></i></button>
                 </form>
-                <p>Enter your email address if you want to receive our newsletter. Subscribe now!</p>
+                <p>Введите вашу электронную почту - будьте всегда в курсе о новых поступлениях. Подпишитесь сейчас!</p>
             </div>
         </div>
     </div>
@@ -2496,7 +2496,7 @@
         <div class="container">
             <div class="row">
                 <ul class="social-icons nav navbar-nav">
-                    <li>
+                    <!-- <li>
                         <a href="http://facebook.com/" rel="nofollow" target="_blank">
                             <i class="fa fa-facebook"></i>
                         </a>
@@ -2510,20 +2510,20 @@
                         <a href="http://twitter.com/" rel="nofollow" target="_blank">
                             <i class="fa fa-twitter"></i>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a href="http://vk.com/" rel="nofollow" target="_blank">
+                        <a href="http://vk.com/tigers_chel" rel="nofollow" target="_blank">
                             <i class="fa fa-vk"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="http://instagram.com/" rel="nofollow" target="_blank">
+                        <a href="http://instagram.com/tigers_fur" rel="nofollow" target="_blank">
                             <i class="fa fa-instagram"></i>
                         </a>
                     </li>
                 </ul>
                 <div class="footer-copyright">
-                    <i><a href="https://themeforest.net/user/real-web?ref=real-web">Real-Web</a></i> © Copyright 2017
+                    <i><a href="https://tigers-fur.ru">Tigers - Кожа и Меха</a></i> © Все права защищены 2017
                 </div>
             </div>
         </div>
