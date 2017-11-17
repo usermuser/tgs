@@ -4326,3 +4326,599 @@ Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
 Set PythonHome to /home/tgs/tgs/envdj111p3/
 ImportError: No module named site
 VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 12:24:18 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x17b0500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x17b0500 pid: 7471 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7471)
+spawned uWSGI worker 1 (pid: 7480, cores: 2)
+spawned uWSGI worker 2 (pid: 7481, cores: 2)
+spawned uWSGI worker 3 (pid: 7482, cores: 2)
+spawned uWSGI worker 4 (pid: 7483, cores: 2)
+[pid: 7483|app: 0|req: 1/1] 176.59.194.160 () {42 vars in 768 bytes} [Fri Nov 17 07:24:34 2017] GET / => generated 148388 bytes in 680 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/purple.jpg
+[pid: 7483|app: 0|req: 3/2] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 07:24:36 2017] GET /img/color/purple.jpg => generated 2094 bytes in 762 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7483|app: 0|req: 3/3] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 07:24:36 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 785 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 7480|app: 0|req: 1/4] 176.59.194.160 () {42 vars in 751 bytes} [Fri Nov 17 07:24:37 2017] GET /img/color/red.jpg => generated 2085 bytes in 1202 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/logo-b.png
+Not Found: /img/slider/slide1.jpg
+[pid: 7482|app: 0|req: 2/5] 176.59.194.160 () {42 vars in 745 bytes} [Fri Nov 17 07:24:37 2017] GET /img/logo-b.png => generated 2076 bytes in 1293 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/map.png
+[pid: 7481|app: 0|req: 2/6] 176.59.194.160 () {42 vars in 739 bytes} [Fri Nov 17 07:24:37 2017] GET /img/map.png => generated 2067 bytes in 1309 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7481|app: 0|req: 2/7] 176.59.194.160 () {42 vars in 759 bytes} [Fri Nov 17 07:24:37 2017] GET /img/slider/slide1.jpg => generated 2097 bytes in 1333 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+[pid: 7483|app: 0|req: 5/8] 176.59.194.160 () {42 vars in 755 bytes} [Fri Nov 17 07:24:37 2017] GET /img/color/green.jpg => generated 2091 bytes in 535 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/blue.jpg
+[pid: 7482|app: 0|req: 2/9] 176.59.194.160 () {42 vars in 753 bytes} [Fri Nov 17 07:24:37 2017] GET /img/color/blue.jpg => generated 2088 bytes in 607 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jquery-1.11.2.min.js
+[pid: 7483|app: 0|req: 5/10] 176.59.194.160 () {42 vars in 763 bytes} [Fri Nov 17 07:24:38 2017] GET /js/jquery-1.11.2.min.js => generated 2103 bytes in 216 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jquery.bxslider.min.js
+[pid: 7483|app: 0|req: 7/11] 176.59.194.160 () {42 vars in 767 bytes} [Fri Nov 17 07:24:39 2017] GET /js/jquery.bxslider.min.js => generated 2109 bytes in 566 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/fancybox/fancybox.js
+Not Found: /js/jquery.flexslider-min.js
+[pid: 7483|app: 0|req: 7/12] 176.59.194.160 () {42 vars in 763 bytes} [Fri Nov 17 07:24:39 2017] GET /js/fancybox/fancybox.js => generated 2103 bytes in 663 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7480|app: 0|req: 2/13] 176.59.194.160 () {42 vars in 771 bytes} [Fri Nov 17 07:24:39 2017] GET /js/jquery.flexslider-min.js => generated 2115 bytes in 554 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jquery.waypoints.min.js
+[pid: 7482|app: 0|req: 4/14] 176.59.194.160 () {42 vars in 769 bytes} [Fri Nov 17 07:24:39 2017] GET /js/jquery.waypoints.min.js => generated 2112 bytes in 550 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/fancybox/helpers/jquery.fancybox-thumbs.js
+[pid: 7481|app: 0|req: 4/15] 176.59.194.160 () {42 vars in 807 bytes} [Fri Nov 17 07:24:39 2017] GET /js/fancybox/helpers/jquery.fancybox-thumbs.js => generated 2169 bytes in 701 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/swiper.jquery.min.js
+[pid: 7481|app: 0|req: 4/16] 176.59.194.160 () {42 vars in 763 bytes} [Fri Nov 17 07:24:39 2017] GET /js/swiper.jquery.min.js => generated 2103 bytes in 698 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/progressbar.min.js
+[pid: 7482|app: 0|req: 5/17] 176.59.194.160 () {42 vars in 759 bytes} [Fri Nov 17 07:24:39 2017] GET /js/progressbar.min.js => generated 2097 bytes in 741 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/chosen.jquery.min.js
+[pid: 7482|app: 0|req: 5/18] 176.59.194.160 () {42 vars in 763 bytes} [Fri Nov 17 07:24:40 2017] GET /js/chosen.jquery.min.js => generated 2103 bytes in 697 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jQuery.Brazzers-Carousel.js
+Not Found: /js/ion.rangeSlider.min.js
+[pid: 7483|app: 0|req: 9/19] 176.59.194.160 () {42 vars in 777 bytes} [Fri Nov 17 07:24:40 2017] GET /js/jQuery.Brazzers-Carousel.js => generated 2124 bytes in 698 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/plugins.js
+Not Found: /js/main.js
+[pid: 7481|app: 0|req: 5/20] 176.59.194.160 () {42 vars in 743 bytes} [Fri Nov 17 07:24:40 2017] GET /js/plugins.js => generated 2073 bytes in 575 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7483|app: 0|req: 9/21] 176.59.194.160 () {42 vars in 767 bytes} [Fri Nov 17 07:24:40 2017] GET /js/ion.rangeSlider.min.js => generated 2109 bytes in 759 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7480|app: 0|req: 3/22] 176.59.194.160 () {42 vars in 737 bytes} [Fri Nov 17 07:24:40 2017] GET /js/main.js => generated 2064 bytes in 589 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/gmap.js
+[pid: 7482|app: 0|req: 6/23] 176.59.194.160 () {42 vars in 737 bytes} [Fri Nov 17 07:24:40 2017] GET /js/gmap.js => generated 2064 bytes in 261 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jquery.flexslider-min.js
+[pid: 7483|app: 0|req: 10/24] 176.59.194.160 () {42 vars in 771 bytes} [Fri Nov 17 07:24:40 2017] GET /js/jquery.flexslider-min.js => generated 2115 bytes in 225 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/swiper.jquery.min.js
+[pid: 7483|app: 0|req: 11/25] 176.59.194.160 () {42 vars in 763 bytes} [Fri Nov 17 07:24:41 2017] GET /js/swiper.jquery.min.js => generated 2103 bytes in 119 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.waypoints.min.js
+[pid: 7483|app: 0|req: 12/26] 176.59.194.160 () {42 vars in 769 bytes} [Fri Nov 17 07:24:41 2017] GET /js/jquery.waypoints.min.js => generated 2112 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/progressbar.min.js
+[pid: 7483|app: 0|req: 13/27] 176.59.194.160 () {42 vars in 759 bytes} [Fri Nov 17 07:24:41 2017] GET /js/progressbar.min.js => generated 2097 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/ion.rangeSlider.min.js
+[pid: 7483|app: 0|req: 14/28] 176.59.194.160 () {42 vars in 767 bytes} [Fri Nov 17 07:24:41 2017] GET /js/ion.rangeSlider.min.js => generated 2109 bytes in 115 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/chosen.jquery.min.js
+[pid: 7483|app: 0|req: 15/29] 176.59.194.160 () {42 vars in 763 bytes} [Fri Nov 17 07:24:42 2017] GET /js/chosen.jquery.min.js => generated 2103 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jQuery.Brazzers-Carousel.js
+[pid: 7483|app: 0|req: 16/30] 176.59.194.160 () {42 vars in 777 bytes} [Fri Nov 17 07:24:42 2017] GET /js/jQuery.Brazzers-Carousel.js => generated 2124 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/plugins.js
+[pid: 7483|app: 0|req: 17/31] 176.59.194.160 () {42 vars in 743 bytes} [Fri Nov 17 07:24:42 2017] GET /js/plugins.js => generated 2073 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/main.js
+[pid: 7483|app: 0|req: 18/32] 176.59.194.160 () {42 vars in 737 bytes} [Fri Nov 17 07:24:43 2017] GET /js/main.js => generated 2064 bytes in 115 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/gmap.js
+[pid: 7483|app: 0|req: 19/33] 176.59.194.160 () {42 vars in 737 bytes} [Fri Nov 17 07:24:43 2017] GET /js/gmap.js => generated 2064 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7483|app: 0|req: 20/34] 176.59.194.160 () {42 vars in 780 bytes} [Fri Nov 17 07:25:13 2017] GET /admin/ => generated 6730 bytes in 1967 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 7483|app: 0|req: 21/35] 176.59.194.160 () {44 vars in 862 bytes} [Fri Nov 17 07:25:36 2017] GET /admin/catalog/catalog/ => generated 4707 bytes in 1730 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 7483|app: 0|req: 22/36] 176.59.194.160 () {42 vars in 765 bytes} [Fri Nov 17 07:25:38 2017] GET /admin/jsi18n/ => generated 14962 bytes in 277 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 7483|app: 0|req: 23/37] 176.59.194.160 () {44 vars in 886 bytes} [Fri Nov 17 07:25:42 2017] GET /admin/catalog/catalog/add/ => generated 5079 bytes in 1522 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 7483|app: 0|req: 24/38] 176.59.194.160 () {42 vars in 769 bytes} [Fri Nov 17 07:25:44 2017] GET /admin/jsi18n/ => generated 14962 bytes in 226 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 7483|app: 0|req: 25/39] 176.59.194.160 () {48 vars in 1085 bytes} [Fri Nov 17 07:26:01 2017] POST /admin/catalog/catalog/add/ => generated 0 bytes in 410 msecs (HTTP/1.1 302) 8 headers in 651 bytes (1 switches on core 0)
+[pid: 7483|app: 0|req: 26/40] 176.59.194.160 () {44 vars in 1240 bytes} [Fri Nov 17 07:26:01 2017] GET /admin/catalog/catalog/ => generated 5148 bytes in 1734 msecs (HTTP/1.1 200) 8 headers in 463 bytes (1 switches on core 1)
+[pid: 7483|app: 0|req: 27/41] 176.59.194.160 () {42 vars in 765 bytes} [Fri Nov 17 07:26:08 2017] GET /admin/jsi18n/ => generated 14962 bytes in 224 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 7483|app: 0|req: 28/42] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 07:26:15 2017] GET / => generated 148658 bytes in 198 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 7480|app: 0|req: 4/43] 176.59.194.160 () {42 vars in 753 bytes} [Fri Nov 17 07:26:16 2017] GET /img/color/blue.jpg => generated 2088 bytes in 277 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/slider/slide1.jpg
+[pid: 7483|app: 0|req: 30/44] 176.59.194.160 () {42 vars in 759 bytes} [Fri Nov 17 07:26:16 2017] GET /img/slider/slide1.jpg => generated 2097 bytes in 377 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/color/red.jpg
+[pid: 7483|app: 0|req: 30/45] 176.59.194.160 () {42 vars in 751 bytes} [Fri Nov 17 07:26:16 2017] GET /img/color/red.jpg => generated 2085 bytes in 375 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/logo-b.png
+Not Found: /img/map.png
+[pid: 7483|app: 0|req: 32/46] 176.59.194.160 () {42 vars in 745 bytes} [Fri Nov 17 07:26:17 2017] GET /img/logo-b.png => generated 2076 bytes in 654 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 7483|app: 0|req: 32/47] 176.59.194.160 () {42 vars in 739 bytes} [Fri Nov 17 07:26:17 2017] GET /img/map.png => generated 2067 bytes in 660 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/green.jpg
+Not Found: /js/jquery-1.11.2.min.js
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/purple.jpg
+[pid: 7480|app: 0|req: 6/49] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:26:17 2017] GET /js/jquery-1.11.2.min.js => generated 2103 bytes in 676 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7481|app: 0|req: 7/49] 176.59.194.160 () {42 vars in 755 bytes} [Fri Nov 17 07:26:17 2017] GET /img/color/green.jpg => generated 2091 bytes in 707 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7481|app: 0|req: 7/51] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 07:26:17 2017] GET /img/color/purple.jpg => generated 2094 bytes in 702 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7480|app: 0|req: 6/51] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 07:26:17 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 711 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/fancybox/fancybox.js
+Not Found: /js/jquery.bxslider.min.js
+[pid: 7483|app: 0|req: 34/52] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:26:18 2017] GET /js/fancybox/fancybox.js => generated 2103 bytes in 674 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/swiper.jquery.min.js
+Not Found: /js/fancybox/helpers/jquery.fancybox-thumbs.js
+[pid: 7480|app: 0|req: 8/53] 176.59.194.160 () {44 vars in 838 bytes} [Fri Nov 17 07:26:18 2017] GET /js/fancybox/helpers/jquery.fancybox-thumbs.js => generated 2169 bytes in 676 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7480|app: 0|req: 8/55] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:26:18 2017] GET /js/swiper.jquery.min.js => generated 2103 bytes in 665 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7483|app: 0|req: 34/55] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 07:26:18 2017] GET /js/jquery.bxslider.min.js => generated 2109 bytes in 709 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.flexslider-min.js
+Not Found: /js/jquery.waypoints.min.js
+[pid: 7481|app: 0|req: 9/56] 176.59.194.160 () {44 vars in 802 bytes} [Fri Nov 17 07:26:18 2017] GET /js/jquery.flexslider-min.js => generated 2115 bytes in 698 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7481|app: 0|req: 9/57] 176.59.194.160 () {44 vars in 800 bytes} [Fri Nov 17 07:26:18 2017] GET /js/jquery.waypoints.min.js => generated 2112 bytes in 660 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/chosen.jquery.min.js
+[pid: 7480|app: 0|req: 9/58] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:26:19 2017] GET /js/chosen.jquery.min.js => generated 2103 bytes in 572 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/progressbar.min.js
+[pid: 7483|app: 0|req: 36/59] 176.59.194.160 () {44 vars in 790 bytes} [Fri Nov 17 07:26:19 2017] GET /js/progressbar.min.js => generated 2097 bytes in 672 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/ion.rangeSlider.min.js
+[pid: 7483|app: 0|req: 36/60] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 07:26:19 2017] GET /js/ion.rangeSlider.min.js => generated 2109 bytes in 681 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/main.js
+[pid: 7482|app: 0|req: 8/61] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 07:26:19 2017] GET /js/main.js => generated 2064 bytes in 605 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/plugins.js
+[pid: 7481|app: 0|req: 11/62] 176.59.194.160 () {44 vars in 774 bytes} [Fri Nov 17 07:26:19 2017] GET /js/plugins.js => generated 2073 bytes in 791 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jQuery.Brazzers-Carousel.js
+[pid: 7481|app: 0|req: 11/63] 176.59.194.160 () {44 vars in 808 bytes} [Fri Nov 17 07:26:19 2017] GET /js/jQuery.Brazzers-Carousel.js => generated 2124 bytes in 855 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/gmap.js
+[pid: 7483|app: 0|req: 37/64] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 07:26:19 2017] GET /js/gmap.js => generated 2064 bytes in 342 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/fancybox/fancybox.js
+[pid: 7482|app: 0|req: 8/65] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:26:19 2017] GET /js/fancybox/fancybox.js => generated 2103 bytes in 303 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/fancybox/helpers/jquery.fancybox-thumbs.js
+[pid: 7483|app: 0|req: 38/66] 176.59.194.160 () {44 vars in 838 bytes} [Fri Nov 17 07:26:20 2017] GET /js/fancybox/helpers/jquery.fancybox-thumbs.js => generated 2169 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.flexslider-min.js
+[pid: 7483|app: 0|req: 39/67] 176.59.194.160 () {44 vars in 802 bytes} [Fri Nov 17 07:26:20 2017] GET /js/jquery.flexslider-min.js => generated 2115 bytes in 115 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/swiper.jquery.min.js
+[pid: 7483|app: 0|req: 40/68] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:26:20 2017] GET /js/swiper.jquery.min.js => generated 2103 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.waypoints.min.js
+[pid: 7483|app: 0|req: 41/69] 176.59.194.160 () {44 vars in 800 bytes} [Fri Nov 17 07:26:21 2017] GET /js/jquery.waypoints.min.js => generated 2112 bytes in 115 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/progressbar.min.js
+[pid: 7483|app: 0|req: 42/70] 176.59.194.160 () {44 vars in 790 bytes} [Fri Nov 17 07:26:21 2017] GET /js/progressbar.min.js => generated 2097 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/ion.rangeSlider.min.js
+[pid: 7483|app: 0|req: 43/71] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 07:26:21 2017] GET /js/ion.rangeSlider.min.js => generated 2109 bytes in 115 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/chosen.jquery.min.js
+[pid: 7483|app: 0|req: 44/72] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:26:21 2017] GET /js/chosen.jquery.min.js => generated 2103 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jQuery.Brazzers-Carousel.js
+[pid: 7483|app: 0|req: 45/73] 176.59.194.160 () {44 vars in 808 bytes} [Fri Nov 17 07:26:22 2017] GET /js/jQuery.Brazzers-Carousel.js => generated 2124 bytes in 115 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/plugins.js
+[pid: 7483|app: 0|req: 46/74] 176.59.194.160 () {44 vars in 774 bytes} [Fri Nov 17 07:26:22 2017] GET /js/plugins.js => generated 2073 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/main.js
+[pid: 7483|app: 0|req: 47/75] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 07:26:22 2017] GET /js/main.js => generated 2064 bytes in 115 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/gmap.js
+[pid: 7483|app: 0|req: 48/76] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 07:26:23 2017] GET /js/gmap.js => generated 2064 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7483|app: 0|req: 49/77] 176.59.194.160 () {44 vars in 846 bytes} [Fri Nov 17 07:28:13 2017] GET /admin/ => generated 7027 bytes in 1075 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 1)
+[pid: 7483|app: 0|req: 50/78] 176.59.194.160 () {44 vars in 870 bytes} [Fri Nov 17 07:28:19 2017] GET /admin/catalog/product/add/ => generated 6442 bytes in 1884 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 7483|app: 0|req: 51/79] 176.59.194.160 () {42 vars in 769 bytes} [Fri Nov 17 07:28:21 2017] GET /admin/jsi18n/ => generated 14962 bytes in 223 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+Internal Server Error: /admin/catalog/product/add/
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1452, in _changeform_view
+    self.log_addition(request, new_object, change_message)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 724, in log_addition
+    object_repr=force_text(object),
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/encoding.py", line 80, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 0-6: ordinal not in range(128)
+[pid: 7483|app: 0|req: 52/80] 176.59.194.160 () {48 vars in 1083 bytes} [Fri Nov 17 07:28:44 2017] POST /admin/catalog/product/add/ => generated 114461 bytes in 4704 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 12:45:25 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x585500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x585500 pid: 7922 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7922)
+spawned uWSGI worker 1 (pid: 7930, cores: 2)
+spawned uWSGI worker 2 (pid: 7931, cores: 2)
+spawned uWSGI worker 3 (pid: 7932, cores: 2)
+spawned uWSGI worker 4 (pid: 7933, cores: 2)
+[pid: 7933|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 07:45:38 2017] GET / => generated 148658 bytes in 508 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /js/jquery-1.11.2.min.js
+[pid: 7933|app: 0|req: 3/2] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:45:40 2017] GET /js/jquery-1.11.2.min.js => generated 2103 bytes in 307 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /js/jquery.bxslider.min.js
+[pid: 7933|app: 0|req: 3/3] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 07:45:40 2017] GET /js/jquery.bxslider.min.js => generated 2109 bytes in 410 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/fancybox/fancybox.js
+Not Found: /js/fancybox/helpers/jquery.fancybox-thumbs.js
+[pid: 7932|app: 0|req: 2/5] 176.59.194.160 () {44 vars in 838 bytes} [Fri Nov 17 07:45:41 2017] GET /js/fancybox/helpers/jquery.fancybox-thumbs.js => generated 2169 bytes in 943 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7932|app: 0|req: 2/5] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:45:40 2017] GET /js/fancybox/fancybox.js => generated 2103 bytes in 1020 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/swiper.jquery.min.js
+Not Found: /js/jquery.flexslider-min.js
+[pid: 7931|app: 0|req: 2/7] 176.59.194.160 () {44 vars in 802 bytes} [Fri Nov 17 07:45:41 2017] GET /js/jquery.flexslider-min.js => generated 2115 bytes in 1033 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7931|app: 0|req: 2/7] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:45:41 2017] GET /js/swiper.jquery.min.js => generated 2103 bytes in 1002 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jquery.waypoints.min.js
+[pid: 7933|app: 0|req: 5/8] 176.59.194.160 () {44 vars in 800 bytes} [Fri Nov 17 07:45:41 2017] GET /js/jquery.waypoints.min.js => generated 2112 bytes in 492 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/progressbar.min.js
+[pid: 7933|app: 0|req: 5/9] 176.59.194.160 () {44 vars in 790 bytes} [Fri Nov 17 07:45:41 2017] GET /js/progressbar.min.js => generated 2097 bytes in 333 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/fancybox/helpers/jquery.fancybox-thumbs.js
+Not Found: /js/chosen.jquery.min.js
+Not Found: /js/ion.rangeSlider.min.js
+[pid: 7933|app: 0|req: 7/10] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:45:43 2017] GET /js/chosen.jquery.min.js => generated 2103 bytes in 660 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7932|app: 0|req: 4/11] 176.59.194.160 () {44 vars in 838 bytes} [Fri Nov 17 07:45:43 2017] GET /js/fancybox/helpers/jquery.fancybox-thumbs.js => generated 2169 bytes in 634 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jQuery.Brazzers-Carousel.js
+[pid: 7933|app: 0|req: 7/12] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 07:45:43 2017] GET /js/ion.rangeSlider.min.js => generated 2109 bytes in 698 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7931|app: 0|req: 4/13] 176.59.194.160 () {44 vars in 808 bytes} [Fri Nov 17 07:45:43 2017] GET /js/jQuery.Brazzers-Carousel.js => generated 2124 bytes in 635 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/plugins.js
+Not Found: /js/main.js
+[pid: 7932|app: 0|req: 5/14] 176.59.194.160 () {44 vars in 774 bytes} [Fri Nov 17 07:45:43 2017] GET /js/plugins.js => generated 2073 bytes in 628 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 7931|app: 0|req: 5/15] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 07:45:43 2017] GET /js/main.js => generated 2064 bytes in 633 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/red.jpg
+Not Found: /img/color/green.jpg
+[pid: 7932|app: 0|req: 5/17] 176.59.194.160 () {42 vars in 751 bytes} [Fri Nov 17 07:45:44 2017] GET /img/color/red.jpg => generated 2085 bytes in 414 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7931|app: 0|req: 5/17] 176.59.194.160 () {42 vars in 755 bytes} [Fri Nov 17 07:45:44 2017] GET /img/color/green.jpg => generated 2091 bytes in 416 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 7933|app: 0|req: 9/18] 176.59.194.160 () {42 vars in 753 bytes} [Fri Nov 17 07:45:44 2017] GET /img/color/blue.jpg => generated 2088 bytes in 496 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/gmap.js
+[pid: 7933|app: 0|req: 9/19] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 07:45:44 2017] GET /js/gmap.js => generated 2064 bytes in 526 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jquery.flexslider-min.js
+[pid: 7932|app: 0|req: 6/20] 176.59.194.160 () {44 vars in 802 bytes} [Fri Nov 17 07:45:44 2017] GET /js/jquery.flexslider-min.js => generated 2115 bytes in 149 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/yellow.jpg
+[pid: 7933|app: 0|req: 11/21] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 07:45:45 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 570 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/purple.jpg
+[pid: 7933|app: 0|req: 11/22] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 07:45:45 2017] GET /img/color/purple.jpg => generated 2094 bytes in 630 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/slider/slide1.jpg
+Not Found: /img/logo-b.png
+[pid: 7932|app: 0|req: 8/24] 176.59.194.160 () {42 vars in 745 bytes} [Fri Nov 17 07:45:45 2017] GET /img/logo-b.png => generated 2076 bytes in 681 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7932|app: 0|req: 8/24] 176.59.194.160 () {42 vars in 759 bytes} [Fri Nov 17 07:45:45 2017] GET /img/slider/slide1.jpg => generated 2097 bytes in 676 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/swiper.jquery.min.js
+Not Found: /img/map.png
+[pid: 7931|app: 0|req: 7/26] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:45:45 2017] GET /js/swiper.jquery.min.js => generated 2103 bytes in 666 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7931|app: 0|req: 7/26] 176.59.194.160 () {42 vars in 739 bytes} [Fri Nov 17 07:45:45 2017] GET /img/map.png => generated 2067 bytes in 701 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.waypoints.min.js
+[pid: 7933|app: 0|req: 12/27] 176.59.194.160 () {44 vars in 800 bytes} [Fri Nov 17 07:45:46 2017] GET /js/jquery.waypoints.min.js => generated 2112 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /js/progressbar.min.js
+[pid: 7933|app: 0|req: 13/28] 176.59.194.160 () {44 vars in 790 bytes} [Fri Nov 17 07:45:47 2017] GET /js/progressbar.min.js => generated 2097 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/ion.rangeSlider.min.js
+[pid: 7933|app: 0|req: 14/29] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 07:45:47 2017] GET /js/ion.rangeSlider.min.js => generated 2109 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/chosen.jquery.min.js
+[pid: 7933|app: 0|req: 15/30] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 07:45:48 2017] GET /js/chosen.jquery.min.js => generated 2103 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jQuery.Brazzers-Carousel.js
+[pid: 7933|app: 0|req: 16/31] 176.59.194.160 () {44 vars in 808 bytes} [Fri Nov 17 07:45:49 2017] GET /js/jQuery.Brazzers-Carousel.js => generated 2124 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/plugins.js
+[pid: 7933|app: 0|req: 17/32] 176.59.194.160 () {44 vars in 774 bytes} [Fri Nov 17 07:45:49 2017] GET /js/plugins.js => generated 2073 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/main.js
+[pid: 7933|app: 0|req: 18/33] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 07:45:49 2017] GET /js/main.js => generated 2064 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/gmap.js
+[pid: 7933|app: 0|req: 19/34] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 07:45:50 2017] GET /js/gmap.js => generated 2064 bytes in 239 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 7931|app: 0|req: 8/35] 176.59.194.160 () {50 vars in 1114 bytes} [Fri Nov 17 07:45:50 2017] POST /admin/catalog/product/add/ => generated 0 bytes in 1469 msecs (HTTP/1.1 302) 8 headers in 651 bytes (1 switches on core 1)
+[pid: 7933|app: 0|req: 20/36] 176.59.194.160 () {44 vars in 1240 bytes} [Fri Nov 17 07:45:52 2017] GET /admin/catalog/product/ => generated 4906 bytes in 2763 msecs (HTTP/1.1 200) 8 headers in 463 bytes (1 switches on core 0)
+[pid: 7933|app: 0|req: 21/37] 176.59.194.160 () {44 vars in 796 bytes} [Fri Nov 17 07:45:55 2017] GET /admin/jsi18n/ => generated 14962 bytes in 267 msecs (HTTP/1.1 200) 4 headers in 116 bytes (2 switches on core 1)
+[pid: 7933|app: 0|req: 22/38] 176.59.194.160 () {44 vars in 846 bytes} [Fri Nov 17 07:51:42 2017] GET /admin/ => generated 7028 bytes in 1170 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 7933|app: 0|req: 23/39] 176.59.194.160 () {44 vars in 850 bytes} [Fri Nov 17 07:51:58 2017] GET /admin/auth/user/ => generated 7102 bytes in 1879 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 7933|app: 0|req: 24/40] 176.59.194.160 () {42 vars in 759 bytes} [Fri Nov 17 07:52:01 2017] GET /admin/jsi18n/ => generated 14962 bytes in 226 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 7933|app: 0|req: 25/41] 176.59.194.160 () {44 vars in 868 bytes} [Fri Nov 17 07:52:05 2017] GET /admin/auth/user/add/ => generated 6391 bytes in 1592 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 7933|app: 0|req: 26/42] 176.59.194.160 () {42 vars in 763 bytes} [Fri Nov 17 07:52:09 2017] GET /admin/jsi18n/ => generated 14962 bytes in 221 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 7933|app: 0|req: 27/43] 176.59.194.160 () {44 vars in 850 bytes} [Fri Nov 17 07:52:32 2017] GET /admin/auth/user/ => generated 7102 bytes in 1914 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 7933|app: 0|req: 28/44] 176.59.194.160 () {44 vars in 878 bytes} [Fri Nov 17 07:52:41 2017] GET /admin/auth/user/1/change/ => generated 15430 bytes in 3863 msecs (HTTP/1.1 200) 7 headers in 382 bytes (1 switches on core 0)
+[pid: 7933|app: 0|req: 29/45] 176.59.194.160 () {42 vars in 768 bytes} [Fri Nov 17 07:52:45 2017] GET /admin/jsi18n/ => generated 14962 bytes in 224 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 7933|app: 0|req: 30/46] 176.59.194.160 () {44 vars in 850 bytes} [Fri Nov 17 07:53:27 2017] GET /admin/auth/user/ => generated 7102 bytes in 2071 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 7933|app: 0|req: 31/47] 176.59.194.160 () {44 vars in 846 bytes} [Fri Nov 17 07:53:39 2017] GET /admin/ => generated 7028 bytes in 1083 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 13:27:31 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0xf30500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+Traceback (most recent call last):
+  File "/home/tgs/tgs/tgs/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/wsgi.py", line 13, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models()
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/apps/config.py", line 202, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./catalog/models.py", line 27
+    catalog = for Key
+                ^
+SyntaxError: invalid syntax
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8673)
+spawned uWSGI worker 1 (pid: 8679, cores: 2)
+spawned uWSGI worker 2 (pid: 8680, cores: 2)
+spawned uWSGI worker 3 (pid: 8681, cores: 2)
+spawned uWSGI worker 4 (pid: 8682, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 8682|app: -1|req: -1/1] 176.59.194.160 () {44 vars in 830 bytes} [Fri Nov 17 08:27:45 2017] GET /admin/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 8682|app: -1|req: -1/2] 176.59.194.160 () {44 vars in 882 bytes} [Fri Nov 17 08:27:47 2017] GET /admin/catalog/product/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 8682|app: -1|req: -1/3] 176.59.194.160 () {42 vars in 768 bytes} [Fri Nov 17 08:28:01 2017] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 8682|app: -1|req: -1/4] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 08:28:05 2017] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 13:35:04 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0xf5f500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xf5f500 pid: 8885 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8885)
+spawned uWSGI worker 1 (pid: 8893, cores: 2)
+spawned uWSGI worker 2 (pid: 8894, cores: 2)
+spawned uWSGI worker 3 (pid: 8895, cores: 2)
+spawned uWSGI worker 4 (pid: 8896, cores: 2)
+[pid: 8895|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 08:35:14 2017] GET / => generated 148658 bytes in 507 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /js/jquery-1.11.2.min.js
+Not Found: /js/jquery.bxslider.min.js
+[pid: 8895|app: 0|req: 3/2] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 08:35:16 2017] GET /js/jquery.bxslider.min.js => generated 2109 bytes in 699 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 8895|app: 0|req: 3/3] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 08:35:16 2017] GET /js/jquery-1.11.2.min.js => generated 2103 bytes in 733 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /js/fancybox/helpers/jquery.fancybox-thumbs.js
+Not Found: /js/fancybox/fancybox.js
+[pid: 8896|app: 0|req: 2/5] 176.59.194.160 () {44 vars in 838 bytes} [Fri Nov 17 08:35:16 2017] GET /js/fancybox/helpers/jquery.fancybox-thumbs.js => generated 2169 bytes in 1149 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 8896|app: 0|req: 2/5] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 08:35:16 2017] GET /js/fancybox/fancybox.js => generated 2103 bytes in 1183 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.flexslider-min.js
+Not Found: /js/swiper.jquery.min.js
+[pid: 8894|app: 0|req: 2/7] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 08:35:16 2017] GET /js/swiper.jquery.min.js => generated 2103 bytes in 1176 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 8894|app: 0|req: 2/7] 176.59.194.160 () {44 vars in 802 bytes} [Fri Nov 17 08:35:16 2017] GET /js/jquery.flexslider-min.js => generated 2115 bytes in 1214 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.waypoints.min.js
+[pid: 8895|app: 0|req: 4/8] 176.59.194.160 () {44 vars in 800 bytes} [Fri Nov 17 08:35:17 2017] GET /js/jquery.waypoints.min.js => generated 2112 bytes in 525 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/plugins.js
+[pid: 8894|app: 0|req: 3/9] 176.59.194.160 () {44 vars in 774 bytes} [Fri Nov 17 08:35:17 2017] GET /js/plugins.js => generated 2073 bytes in 546 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/main.js
+[pid: 8896|app: 0|req: 3/10] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 08:35:17 2017] GET /js/main.js => generated 2064 bytes in 575 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/progressbar.min.js
+Not Found: /js/chosen.jquery.min.js
+[pid: 8893|app: 0|req: 2/11] 176.59.194.160 () {44 vars in 790 bytes} [Fri Nov 17 08:35:17 2017] GET /js/progressbar.min.js => generated 2097 bytes in 1277 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 8895|app: 0|req: 6/12] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 08:35:17 2017] GET /js/chosen.jquery.min.js => generated 2103 bytes in 732 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/ion.rangeSlider.min.js
+[pid: 8893|app: 0|req: 2/13] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 08:35:17 2017] GET /js/ion.rangeSlider.min.js => generated 2109 bytes in 758 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jQuery.Brazzers-Carousel.js
+[pid: 8895|app: 0|req: 6/14] 176.59.194.160 () {44 vars in 808 bytes} [Fri Nov 17 08:35:17 2017] GET /js/jQuery.Brazzers-Carousel.js => generated 2124 bytes in 763 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/gmap.js
+[pid: 8896|app: 0|req: 4/15] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 08:35:18 2017] GET /js/gmap.js => generated 2064 bytes in 283 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jquery.bxslider.min.js
+[pid: 8895|app: 0|req: 8/16] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 08:35:18 2017] GET /js/jquery.bxslider.min.js => generated 2109 bytes in 342 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 8895|app: 0|req: 8/17] 176.59.194.160 () {42 vars in 753 bytes} [Fri Nov 17 08:35:18 2017] GET /img/color/blue.jpg => generated 2088 bytes in 474 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+[pid: 8896|app: 0|req: 6/18] 176.59.194.160 () {42 vars in 755 bytes} [Fri Nov 17 08:35:18 2017] GET /img/color/green.jpg => generated 2091 bytes in 596 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 8896|app: 0|req: 6/19] 176.59.194.160 () {42 vars in 751 bytes} [Fri Nov 17 08:35:18 2017] GET /img/color/red.jpg => generated 2085 bytes in 624 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/yellow.jpg
+[pid: 8894|app: 0|req: 5/20] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 08:35:18 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 602 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/purple.jpg
+[pid: 8894|app: 0|req: 5/21] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 08:35:18 2017] GET /img/color/purple.jpg => generated 2094 bytes in 554 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/fancybox/fancybox.js
+[pid: 8895|app: 0|req: 10/22] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 08:35:19 2017] GET /js/fancybox/fancybox.js => generated 2103 bytes in 287 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/slider/slide1.jpg
+[pid: 8896|app: 0|req: 8/23] 176.59.194.160 () {42 vars in 759 bytes} [Fri Nov 17 08:35:19 2017] GET /img/slider/slide1.jpg => generated 2097 bytes in 351 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/logo-b.png
+[pid: 8895|app: 0|req: 10/24] 176.59.194.160 () {42 vars in 745 bytes} [Fri Nov 17 08:35:19 2017] GET /img/logo-b.png => generated 2076 bytes in 332 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/map.png
+[pid: 8896|app: 0|req: 8/25] 176.59.194.160 () {42 vars in 739 bytes} [Fri Nov 17 08:35:19 2017] GET /img/map.png => generated 2067 bytes in 313 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/fancybox/helpers/jquery.fancybox-thumbs.js
+[pid: 8895|app: 0|req: 11/26] 176.59.194.160 () {44 vars in 838 bytes} [Fri Nov 17 08:35:20 2017] GET /js/fancybox/helpers/jquery.fancybox-thumbs.js => generated 2169 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/jquery.flexslider-min.js
+[pid: 8896|app: 0|req: 9/27] 176.59.194.160 () {44 vars in 802 bytes} [Fri Nov 17 08:35:20 2017] GET /js/jquery.flexslider-min.js => generated 2115 bytes in 119 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/swiper.jquery.min.js
+[pid: 8895|app: 0|req: 12/28] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 08:35:20 2017] GET /js/swiper.jquery.min.js => generated 2103 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.waypoints.min.js
+[pid: 8895|app: 0|req: 13/29] 176.59.194.160 () {44 vars in 800 bytes} [Fri Nov 17 08:35:21 2017] GET /js/jquery.waypoints.min.js => generated 2112 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/progressbar.min.js
+[pid: 8895|app: 0|req: 14/30] 176.59.194.160 () {44 vars in 790 bytes} [Fri Nov 17 08:35:21 2017] GET /js/progressbar.min.js => generated 2097 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/ion.rangeSlider.min.js
+[pid: 8895|app: 0|req: 15/31] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 08:35:21 2017] GET /js/ion.rangeSlider.min.js => generated 2109 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/chosen.jquery.min.js
+[pid: 8895|app: 0|req: 17/32] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 08:35:22 2017] GET /js/chosen.jquery.min.js => generated 2103 bytes in 245 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jQuery.Brazzers-Carousel.js
+[pid: 8895|app: 0|req: 18/33] 176.59.194.160 () {44 vars in 808 bytes} [Fri Nov 17 08:35:22 2017] GET /js/jQuery.Brazzers-Carousel.js => generated 2124 bytes in 246 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/plugins.js
+[pid: 8895|app: 0|req: 19/34] 176.59.194.160 () {44 vars in 774 bytes} [Fri Nov 17 08:35:23 2017] GET /js/plugins.js => generated 2073 bytes in 227 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/main.js
+[pid: 8895|app: 0|req: 20/35] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 08:35:23 2017] GET /js/main.js => generated 2064 bytes in 234 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/gmap.js
+[pid: 8895|app: 0|req: 21/36] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 08:35:24 2017] GET /js/gmap.js => generated 2064 bytes in 250 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 8895|app: 0|req: 21/37] 176.59.194.160 () {42 vars in 780 bytes} [Fri Nov 17 08:35:22 2017] GET /admin/ => generated 7028 bytes in 2628 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 8895|app: 0|req: 22/38] 176.59.194.160 () {44 vars in 862 bytes} [Fri Nov 17 08:35:28 2017] GET /admin/catalog/catalog/ => generated 4940 bytes in 1812 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 8895|app: 0|req: 23/39] 176.59.194.160 () {42 vars in 765 bytes} [Fri Nov 17 08:35:30 2017] GET /admin/jsi18n/ => generated 14962 bytes in 269 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 8895|app: 0|req: 24/40] 176.59.194.160 () {44 vars in 896 bytes} [Fri Nov 17 08:35:34 2017] GET /admin/catalog/catalog/5/change/ => generated 5344 bytes in 1599 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 8895|app: 0|req: 25/41] 176.59.194.160 () {42 vars in 774 bytes} [Fri Nov 17 08:35:39 2017] GET /admin/jsi18n/ => generated 14962 bytes in 223 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 8895|app: 0|req: 26/42] 176.59.194.160 () {48 vars in 1098 bytes} [Fri Nov 17 08:36:43 2017] POST /admin/catalog/catalog/5/change/ => generated 0 bytes in 442 msecs (HTTP/1.1 302) 8 headers in 579 bytes (1 switches on core 0)
+[pid: 8895|app: 0|req: 27/43] 176.59.194.160 () {44 vars in 1173 bytes} [Fri Nov 17 08:36:45 2017] GET /admin/catalog/catalog/ => generated 5126 bytes in 1803 msecs (HTTP/1.1 200) 8 headers in 463 bytes (1 switches on core 1)
+[pid: 8895|app: 0|req: 28/44] 176.59.194.160 () {42 vars in 765 bytes} [Fri Nov 17 08:36:47 2017] GET /admin/jsi18n/ => generated 14962 bytes in 226 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 13:37:21 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x277500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x277500 pid: 8966 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 8966)
+spawned uWSGI worker 1 (pid: 8973, cores: 2)
+spawned uWSGI worker 2 (pid: 8974, cores: 2)
+spawned uWSGI worker 3 (pid: 8975, cores: 2)
+spawned uWSGI worker 4 (pid: 8976, cores: 2)
+[pid: 8973|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 846 bytes} [Fri Nov 17 08:37:29 2017] GET /admin/ => generated 7465 bytes in 2585 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 8973|app: 0|req: 2/2] 176.59.194.160 () {44 vars in 864 bytes} [Fri Nov 17 08:37:36 2017] GET /admin/catalog/category/ => generated 3238 bytes in 1223 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 8976|app: 0|req: 1/3] 176.59.194.160 () {42 vars in 766 bytes} [Fri Nov 17 08:37:43 2017] GET /admin/jsi18n/ => generated 14962 bytes in 479 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 2/4] 176.59.194.160 () {44 vars in 889 bytes} [Fri Nov 17 08:37:46 2017] GET /admin/catalog/category/add/ => generated 6233 bytes in 2988 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 8976|app: 0|req: 3/5] 176.59.194.160 () {42 vars in 770 bytes} [Fri Nov 17 08:37:50 2017] GET /admin/jsi18n/ => generated 14962 bytes in 220 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 4/6] 176.59.194.160 () {48 vars in 1086 bytes} [Fri Nov 17 08:38:42 2017] POST /admin/catalog/category/add/ => generated 0 bytes in 645 msecs (HTTP/1.1 302) 8 headers in 660 bytes (1 switches on core 1)
+[pid: 8976|app: 0|req: 5/7] 176.59.194.160 () {44 vars in 1251 bytes} [Fri Nov 17 08:38:43 2017] GET /admin/catalog/category/ => generated 4698 bytes in 1617 msecs (HTTP/1.1 200) 8 headers in 463 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 6/8] 176.59.194.160 () {42 vars in 766 bytes} [Fri Nov 17 08:38:45 2017] GET /admin/jsi18n/ => generated 14962 bytes in 220 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 8976|app: 0|req: 7/9] 176.59.194.160 () {44 vars in 863 bytes} [Fri Nov 17 08:38:49 2017] GET /admin/catalog/ => generated 3328 bytes in 851 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 8/10] 176.59.194.160 () {44 vars in 870 bytes} [Fri Nov 17 08:38:53 2017] GET /admin/catalog/catalog/ => generated 4940 bytes in 1740 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 1)
+[pid: 8976|app: 0|req: 9/11] 176.59.194.160 () {42 vars in 765 bytes} [Fri Nov 17 08:38:55 2017] GET /admin/jsi18n/ => generated 14962 bytes in 278 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 10/12] 176.59.194.160 () {44 vars in 896 bytes} [Fri Nov 17 08:38:57 2017] GET /admin/catalog/catalog/5/change/ => generated 5344 bytes in 1572 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 8976|app: 0|req: 11/13] 176.59.194.160 () {42 vars in 774 bytes} [Fri Nov 17 08:38:59 2017] GET /admin/jsi18n/ => generated 14962 bytes in 233 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 8976|app: 0|req: 12/14] 176.59.194.160 () {44 vars in 870 bytes} [Fri Nov 17 08:39:04 2017] GET /admin/catalog/catalog/ => generated 4940 bytes in 1744 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
