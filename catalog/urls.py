@@ -1,11 +1,13 @@
-from django.conf.urls import url
+# -*- coding:utf-8 -*-
+from django.conf.urls import url, include
 
 from . import views
 
-app_name = 'catalog'
+#app_name = 'catalog'
 urlpatterns = [
     # ex: /polls/
-    url(r'^$', views.product_list, name='product_list'),
+#    url(r'^$', views.product_list, name='product_list'),
+	url(r'^$',views.index,name='index'),
     # # ex: /polls/5/
     # url(r'^(?P<question_id>[0-9]+)/$', views.detail, name='detail'),
     # # ex: /polls/5/results/

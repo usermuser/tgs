@@ -1,4 +1,6 @@
+# -*- coding:utf-8 -*-
 from django.db import models
+
 
 class Catalog(models.Model):
     name = models.CharField(max_length=255)
@@ -8,7 +10,7 @@ class Catalog(models.Model):
     class Meta:
         ordering=('name',)
 
-    def __str__(self):
+    def __unicode__(self):
         return self.name
 
 class Product(models.Model):

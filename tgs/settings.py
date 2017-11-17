@@ -1,3 +1,4 @@
+# -*- coding:utf-8 -*-
 """
 Django settings for tgs project.
 
@@ -11,6 +12,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
+import psycopg2.extensions
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -34,13 +36,13 @@ ALLOWED_HOSTS = [u'192.168.0.3',
 # Application definition
 
 INSTALLED_APPS = [
+	'catalog.apps.CatalogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'catalog',
 ]
 
 MIDDLEWARE = [
@@ -94,8 +96,8 @@ DATABASES = {
         'NAME': 'tgsdb',
         'USER' : 'tgs',
         'PASSWORD' : 'trewqa',
-        'HOST' : '',
-        'PORT' : '',
+        'HOST' : 'localhost',
+        'PORT' : '5432',
         
     }
 }
@@ -140,3 +142,4 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = '/home/tgs/tgs/static/'
