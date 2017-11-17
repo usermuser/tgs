@@ -4932,3 +4932,1222 @@ spawned uWSGI worker 4 (pid: 8976, cores: 2)
 [pid: 8976|app: 0|req: 20/22] 176.59.194.160 () {42 vars in 766 bytes} [Fri Nov 17 09:14:25 2017] GET /admin/jsi18n/ => generated 14962 bytes in 223 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
 [pid: 8976|app: 0|req: 21/23] 176.59.194.160 () {44 vars in 889 bytes} [Fri Nov 17 09:14:29 2017] GET /admin/catalog/category/add/ => generated 6233 bytes in 1794 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
 [pid: 8976|app: 0|req: 22/24] 176.59.194.160 () {42 vars in 770 bytes} [Fri Nov 17 09:14:31 2017] GET /admin/jsi18n/ => generated 14962 bytes in 224 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 14:48:13 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0xc71500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xc71500 pid: 10380 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10380)
+spawned uWSGI worker 1 (pid: 10386, cores: 2)
+spawned uWSGI worker 2 (pid: 10387, cores: 2)
+spawned uWSGI worker 3 (pid: 10388, cores: 2)
+spawned uWSGI worker 4 (pid: 10389, cores: 2)
+[pid: 10389|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 09:48:21 2017] GET / => generated 148834 bytes in 494 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /js/jquery.bxslider.min.js
+Not Found: /js/jquery-1.11.2.min.js
+[pid: 10389|app: 0|req: 3/2] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 09:48:22 2017] GET /js/jquery-1.11.2.min.js => generated 2103 bytes in 789 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 10389|app: 0|req: 3/3] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 09:48:22 2017] GET /js/jquery.bxslider.min.js => generated 2109 bytes in 776 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/fancybox/fancybox.js
+Not Found: /js/swiper.jquery.min.js
+[pid: 10388|app: 0|req: 2/5] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 09:48:22 2017] GET /js/swiper.jquery.min.js => generated 2103 bytes in 1179 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10388|app: 0|req: 2/5] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 09:48:22 2017] GET /js/fancybox/fancybox.js => generated 2103 bytes in 1223 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/fancybox/helpers/jquery.fancybox-thumbs.js
+Not Found: /js/jquery.flexslider-min.js
+[pid: 10387|app: 0|req: 2/7] 176.59.194.160 () {44 vars in 802 bytes} [Fri Nov 17 09:48:22 2017] GET /js/jquery.flexslider-min.js => generated 2115 bytes in 1215 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10387|app: 0|req: 2/7] 176.59.194.160 () {44 vars in 838 bytes} [Fri Nov 17 09:48:22 2017] GET /js/fancybox/helpers/jquery.fancybox-thumbs.js => generated 2169 bytes in 1226 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.waypoints.min.js
+[pid: 10389|app: 0|req: 5/8] 176.59.194.160 () {44 vars in 800 bytes} [Fri Nov 17 09:48:23 2017] GET /js/jquery.waypoints.min.js => generated 2112 bytes in 603 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/ion.rangeSlider.min.js
+[pid: 10387|app: 0|req: 3/9] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 09:48:23 2017] GET /js/ion.rangeSlider.min.js => generated 2109 bytes in 561 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/chosen.jquery.min.js
+Not Found: /js/jQuery.Brazzers-Carousel.js
+[pid: 10389|app: 0|req: 6/10] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 09:48:23 2017] GET /js/chosen.jquery.min.js => generated 2103 bytes in 735 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10388|app: 0|req: 4/11] 176.59.194.160 () {44 vars in 808 bytes} [Fri Nov 17 09:48:23 2017] GET /js/jQuery.Brazzers-Carousel.js => generated 2124 bytes in 746 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/progressbar.min.js
+[pid: 10386|app: 0|req: 1/12] 176.59.194.160 () {44 vars in 790 bytes} [Fri Nov 17 09:48:23 2017] GET /js/progressbar.min.js => generated 2097 bytes in 1249 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/plugins.js
+[pid: 10388|app: 0|req: 4/13] 176.59.194.160 () {44 vars in 774 bytes} [Fri Nov 17 09:48:23 2017] GET /js/plugins.js => generated 2073 bytes in 794 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/main.js
+[pid: 10389|app: 0|req: 7/14] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 09:48:23 2017] GET /js/main.js => generated 2064 bytes in 695 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/gmap.js
+[pid: 10387|app: 0|req: 5/15] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 09:48:24 2017] GET /js/gmap.js => generated 2064 bytes in 673 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.bxslider.min.js
+Not Found: /img/color/blue.jpg
+[pid: 10387|app: 0|req: 6/16] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 09:48:24 2017] GET /js/jquery.bxslider.min.js => generated 2109 bytes in 641 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 10389|app: 0|req: 8/17] 176.59.194.160 () {42 vars in 753 bytes} [Fri Nov 17 09:48:24 2017] GET /img/color/blue.jpg => generated 2088 bytes in 696 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10388|app: 0|req: 6/18] 176.59.194.160 () {42 vars in 751 bytes} [Fri Nov 17 09:48:24 2017] GET /img/color/red.jpg => generated 2085 bytes in 676 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/green.jpg
+Not Found: /img/color/yellow.jpg
+[pid: 10388|app: 0|req: 6/19] 176.59.194.160 () {42 vars in 755 bytes} [Fri Nov 17 09:48:24 2017] GET /img/color/green.jpg => generated 2091 bytes in 695 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10389|app: 0|req: 8/20] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 09:48:24 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 605 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/purple.jpg
+[pid: 10387|app: 0|req: 6/21] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 09:48:25 2017] GET /img/color/purple.jpg => generated 2094 bytes in 275 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/fancybox/fancybox.js
+[pid: 10387|app: 0|req: 7/22] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 09:48:25 2017] GET /js/fancybox/fancybox.js => generated 2103 bytes in 121 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /js/fancybox/helpers/jquery.fancybox-thumbs.js
+[pid: 10389|app: 0|req: 9/23] 176.59.194.160 () {44 vars in 838 bytes} [Fri Nov 17 09:48:27 2017] GET /js/fancybox/helpers/jquery.fancybox-thumbs.js => generated 2169 bytes in 158 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.flexslider-min.js
+[pid: 10389|app: 0|req: 10/24] 176.59.194.160 () {44 vars in 802 bytes} [Fri Nov 17 09:48:27 2017] GET /js/jquery.flexslider-min.js => generated 2115 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/swiper.jquery.min.js
+[pid: 10389|app: 0|req: 11/25] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 09:48:27 2017] GET /js/swiper.jquery.min.js => generated 2103 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jquery.waypoints.min.js
+[pid: 10389|app: 0|req: 12/26] 176.59.194.160 () {44 vars in 800 bytes} [Fri Nov 17 09:48:28 2017] GET /js/jquery.waypoints.min.js => generated 2112 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/progressbar.min.js
+[pid: 10389|app: 0|req: 13/27] 176.59.194.160 () {44 vars in 790 bytes} [Fri Nov 17 09:48:28 2017] GET /js/progressbar.min.js => generated 2097 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/ion.rangeSlider.min.js
+[pid: 10389|app: 0|req: 14/28] 176.59.194.160 () {44 vars in 798 bytes} [Fri Nov 17 09:48:28 2017] GET /js/ion.rangeSlider.min.js => generated 2109 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/chosen.jquery.min.js
+[pid: 10389|app: 0|req: 15/29] 176.59.194.160 () {44 vars in 794 bytes} [Fri Nov 17 09:48:28 2017] GET /js/chosen.jquery.min.js => generated 2103 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/jQuery.Brazzers-Carousel.js
+[pid: 10389|app: 0|req: 16/30] 176.59.194.160 () {44 vars in 808 bytes} [Fri Nov 17 09:48:29 2017] GET /js/jQuery.Brazzers-Carousel.js => generated 2124 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/plugins.js
+[pid: 10389|app: 0|req: 17/31] 176.59.194.160 () {44 vars in 774 bytes} [Fri Nov 17 09:48:29 2017] GET /js/plugins.js => generated 2073 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /js/main.js
+[pid: 10389|app: 0|req: 18/32] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 09:48:29 2017] GET /js/main.js => generated 2064 bytes in 115 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /js/gmap.js
+[pid: 10389|app: 0|req: 19/33] 176.59.194.160 () {44 vars in 768 bytes} [Fri Nov 17 09:48:29 2017] GET /js/gmap.js => generated 2064 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 14:59:52 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x75c500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x75c500 pid: 10612 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10612)
+spawned uWSGI worker 1 (pid: 10622, cores: 2)
+spawned uWSGI worker 2 (pid: 10623, cores: 2)
+spawned uWSGI worker 3 (pid: 10624, cores: 2)
+spawned uWSGI worker 4 (pid: 10625, cores: 2)
+[pid: 10625|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 10:00:04 2017] GET / => generated 149143 bytes in 504 msecs (HTTP/1.1 200) 3 headers in 112 bytes (2 switches on core 0)
+Not Found: /img/color/blue.jpg
+[pid: 10625|app: 0|req: 2/2] 176.59.194.160 () {42 vars in 753 bytes} [Fri Nov 17 10:00:09 2017] GET /img/color/blue.jpg => generated 2088 bytes in 149 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 10625|app: 0|req: 3/3] 176.59.194.160 () {42 vars in 751 bytes} [Fri Nov 17 10:00:09 2017] GET /img/color/red.jpg => generated 2085 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+[pid: 10625|app: 0|req: 4/4] 176.59.194.160 () {42 vars in 755 bytes} [Fri Nov 17 10:00:10 2017] GET /img/color/green.jpg => generated 2091 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/yellow.jpg
+[pid: 10625|app: 0|req: 5/5] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 10:00:12 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/purple.jpg
+[pid: 10625|app: 0|req: 6/6] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 10:00:12 2017] GET /img/color/purple.jpg => generated 2094 bytes in 121 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10625|app: 0|req: 7/7] 176.59.194.160 () {44 vars in 867 bytes} [Fri Nov 17 10:01:09 2017] GET /admin/catalog/ => generated 3328 bytes in 1875 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 10625|app: 0|req: 8/8] 176.59.194.160 () {44 vars in 870 bytes} [Fri Nov 17 10:01:15 2017] GET /admin/catalog/catalog/ => generated 4940 bytes in 1840 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 10625|app: 0|req: 9/9] 176.59.194.160 () {42 vars in 765 bytes} [Fri Nov 17 10:01:17 2017] GET /admin/jsi18n/ => generated 14962 bytes in 264 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 10625|app: 0|req: 10/10] 176.59.194.160 () {48 vars in 995 bytes} [Fri Nov 17 10:01:22 2017] POST /admin/catalog/catalog/ => generated 3470 bytes in 993 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 10625|app: 0|req: 11/11] 176.59.194.160 () {48 vars in 995 bytes} [Fri Nov 17 10:01:25 2017] POST /admin/catalog/catalog/ => generated 0 bytes in 526 msecs (HTTP/1.1 302) 8 headers in 498 bytes (2 switches on core 0)
+[pid: 10625|app: 0|req: 12/12] 176.59.194.160 () {44 vars in 1083 bytes} [Fri Nov 17 10:01:26 2017] GET /admin/catalog/catalog/ => generated 4839 bytes in 1728 msecs (HTTP/1.1 200) 8 headers in 463 bytes (1 switches on core 1)
+[pid: 10625|app: 0|req: 13/13] 176.59.194.160 () {42 vars in 765 bytes} [Fri Nov 17 10:01:29 2017] GET /admin/jsi18n/ => generated 14962 bytes in 223 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 10625|app: 0|req: 14/14] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 10:01:34 2017] GET / => generated 148873 bytes in 197 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 10625|app: 0|req: 16/15] 176.59.194.160 () {42 vars in 753 bytes} [Fri Nov 17 10:01:36 2017] GET /img/color/blue.jpg => generated 2088 bytes in 569 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/color/red.jpg
+[pid: 10625|app: 0|req: 16/16] 176.59.194.160 () {42 vars in 751 bytes} [Fri Nov 17 10:01:36 2017] GET /img/color/red.jpg => generated 2085 bytes in 610 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/green.jpg
+[pid: 10624|app: 0|req: 1/17] 176.59.194.160 () {42 vars in 755 bytes} [Fri Nov 17 10:01:36 2017] GET /img/color/green.jpg => generated 2091 bytes in 864 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/purple.jpg
+[pid: 10622|app: 0|req: 2/19] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 10:01:36 2017] GET /img/color/purple.jpg => generated 2094 bytes in 898 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10622|app: 0|req: 2/19] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 10:01:36 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 905 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 15:09:15 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0xde3500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xde3500 pid: 10825 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10825)
+spawned uWSGI worker 1 (pid: 10831, cores: 2)
+spawned uWSGI worker 2 (pid: 10832, cores: 2)
+spawned uWSGI worker 3 (pid: 10833, cores: 2)
+spawned uWSGI worker 4 (pid: 10834, cores: 2)
+[pid: 10833|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 10:12:36 2017] GET / => generated 150232 bytes in 504 msecs (HTTP/1.1 200) 3 headers in 112 bytes (2 switches on core 0)
+Not Found: /img/color/blue.jpg
+[pid: 10833|app: 0|req: 2/2] 176.59.194.160 () {42 vars in 753 bytes} [Fri Nov 17 10:12:51 2017] GET /img/color/blue.jpg => generated 2088 bytes in 142 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 10833|app: 0|req: 3/3] 176.59.194.160 () {42 vars in 751 bytes} [Fri Nov 17 10:12:53 2017] GET /img/color/red.jpg => generated 2085 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+[pid: 10833|app: 0|req: 4/4] 176.59.194.160 () {42 vars in 755 bytes} [Fri Nov 17 10:12:53 2017] GET /img/color/green.jpg => generated 2091 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/yellow.jpg
+[pid: 10833|app: 0|req: 6/5] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 10:12:53 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 145 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/purple.jpg
+[pid: 10833|app: 0|req: 6/6] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 10:12:53 2017] GET /img/color/purple.jpg => generated 2094 bytes in 141 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 15:13:16 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x1478500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x1478500 pid: 10945 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 10945)
+spawned uWSGI worker 1 (pid: 10951, cores: 2)
+spawned uWSGI worker 2 (pid: 10952, cores: 2)
+spawned uWSGI worker 3 (pid: 10953, cores: 2)
+spawned uWSGI worker 4 (pid: 10954, cores: 2)
+[pid: 10951|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 10:13:23 2017] GET / => generated 150232 bytes in 556 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /img/color/red.jpg
+[pid: 10951|app: 0|req: 2/2] 176.59.194.160 () {42 vars in 751 bytes} [Fri Nov 17 10:13:25 2017] GET /img/color/red.jpg => generated 2085 bytes in 514 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/blue.jpg
+[pid: 10954|app: 0|req: 2/4] 176.59.194.160 () {42 vars in 753 bytes} [Fri Nov 17 10:13:25 2017] GET /img/color/blue.jpg => generated 2088 bytes in 743 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10954|app: 0|req: 2/4] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 10:13:25 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 845 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/color/green.jpg
+[pid: 10953|app: 0|req: 2/5] 176.59.194.160 () {42 vars in 755 bytes} [Fri Nov 17 10:13:25 2017] GET /img/color/green.jpg => generated 2091 bytes in 884 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/purple.jpg
+[pid: 10953|app: 0|req: 2/6] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 10:13:25 2017] GET /img/color/purple.jpg => generated 2094 bytes in 837 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 10954|app: 0|req: 3/7] 176.59.194.160 () {40 vars in 814 bytes} [Fri Nov 17 10:15:36 2017] GET / => generated 150232 bytes in 432 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 10954|app: 0|req: 4/8] 176.59.194.160 () {40 vars in 811 bytes} [Fri Nov 17 10:16:11 2017] GET /img/color/red.jpg => generated 2085 bytes in 154 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/purple.jpg
+[pid: 10953|app: 0|req: 3/10] 176.59.194.160 () {40 vars in 817 bytes} [Fri Nov 17 10:16:11 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 413 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 10951|app: 0|req: 3/10] 176.59.194.160 () {40 vars in 817 bytes} [Fri Nov 17 10:16:11 2017] GET /img/color/purple.jpg => generated 2094 bytes in 406 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/blue.jpg
+[pid: 10954|app: 0|req: 6/11] 176.59.194.160 () {40 vars in 813 bytes} [Fri Nov 17 10:16:11 2017] GET /img/color/blue.jpg => generated 2088 bytes in 479 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/green.jpg
+[pid: 10954|app: 0|req: 6/12] 176.59.194.160 () {40 vars in 815 bytes} [Fri Nov 17 10:16:11 2017] GET /img/color/green.jpg => generated 2091 bytes in 489 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 15:27:29 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x18ab500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x18ab500 pid: 11244 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11244)
+spawned uWSGI worker 1 (pid: 11251, cores: 2)
+spawned uWSGI worker 2 (pid: 11252, cores: 2)
+spawned uWSGI worker 3 (pid: 11253, cores: 2)
+spawned uWSGI worker 4 (pid: 11254, cores: 2)
+[pid: 11254|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 10:27:37 2017] GET / => generated 150232 bytes in 499 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /img/color/blue.jpg
+Not Found: /img/color/red.jpg
+[pid: 11254|app: 0|req: 3/3] 176.59.194.160 () {42 vars in 753 bytes} [Fri Nov 17 10:27:39 2017] GET /img/color/blue.jpg => generated 2088 bytes in 638 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 11254|app: 0|req: 3/3] 176.59.194.160 () {42 vars in 751 bytes} [Fri Nov 17 10:27:39 2017] GET /img/color/red.jpg => generated 2085 bytes in 633 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/purple.jpg
+[pid: 11252|app: 0|req: 1/4] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 10:27:39 2017] GET /img/color/purple.jpg => generated 2094 bytes in 830 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+Not Found: /img/color/yellow.jpg
+[pid: 11253|app: 0|req: 2/6] 176.59.194.160 () {42 vars in 757 bytes} [Fri Nov 17 10:27:39 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 868 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11253|app: 0|req: 2/6] 176.59.194.160 () {42 vars in 755 bytes} [Fri Nov 17 10:27:39 2017] GET /img/color/green.jpg => generated 2091 bytes in 906 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /index.html
+[pid: 11254|app: 0|req: 4/7] 176.59.194.160 () {44 vars in 832 bytes} [Fri Nov 17 10:28:01 2017] GET /index.html => generated 2064 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 5/8] 94.181.35.208 () {38 vars in 691 bytes} [Fri Nov 17 12:01:19 2017] GET / => generated 150232 bytes in 190 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /img/color/red.jpg
+Not Found: /img/color/blue.jpg
+[pid: 11254|app: 0|req: 7/10] 94.181.35.208 () {38 vars in 690 bytes} [Fri Nov 17 12:01:20 2017] GET /img/color/blue.jpg => generated 2088 bytes in 559 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 7/10] 94.181.35.208 () {38 vars in 688 bytes} [Fri Nov 17 12:01:20 2017] GET /img/color/red.jpg => generated 2085 bytes in 550 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/green.jpg
+[pid: 11252|app: 0|req: 2/11] 94.181.35.208 () {38 vars in 694 bytes} [Fri Nov 17 12:01:20 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 549 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11253|app: 0|req: 3/12] 94.181.35.208 () {38 vars in 692 bytes} [Fri Nov 17 12:01:20 2017] GET /img/color/green.jpg => generated 2091 bytes in 543 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/purple.jpg
+[pid: 11254|app: 0|req: 8/13] 94.181.35.208 () {38 vars in 694 bytes} [Fri Nov 17 12:01:20 2017] GET /img/color/purple.jpg => generated 2094 bytes in 157 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 11254|app: 0|req: 9/14] 94.181.35.208 () {38 vars in 676 bytes} [Fri Nov 17 12:01:22 2017] GET /favicon.ico => generated 2067 bytes in 128 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 10/15] 94.181.35.208 () {38 vars in 701 bytes} [Fri Nov 17 12:01:32 2017] GET /admin => generated 0 bytes in 14 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 11/16] 94.181.35.208 () {38 vars in 703 bytes} [Fri Nov 17 12:01:32 2017] GET /admin/ => generated 0 bytes in 1023 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 12/17] 94.181.35.208 () {38 vars in 740 bytes} [Fri Nov 17 12:01:33 2017] GET /admin/login/?next=/admin/ => generated 1736 bytes in 759 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 13/18] 94.181.35.208 () {50 vars in 1088 bytes} [Fri Nov 17 12:01:42 2017] POST /admin/login/?next=/admin/ => generated 2004 bytes in 1730 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 14/19] 94.181.35.208 () {50 vars in 1088 bytes} [Fri Nov 17 12:01:49 2017] POST /admin/login/?next=/admin/ => generated 0 bytes in 1347 msecs (HTTP/1.1 302) 9 headers in 531 bytes (2 switches on core 1)
+[pid: 11254|app: 0|req: 15/20] 94.181.35.208 () {44 vars in 936 bytes} [Fri Nov 17 12:01:50 2017] GET /admin/ => generated 7469 bytes in 1246 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 16/21] 94.181.35.208 () {42 vars in 918 bytes} [Fri Nov 17 12:02:16 2017] GET /admin/catalog/catalog/ => generated 4707 bytes in 1684 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 17/22] 94.181.35.208 () {40 vars in 799 bytes} [Fri Nov 17 12:02:18 2017] GET /admin/jsi18n/ => generated 14962 bytes in 374 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 18/23] 94.181.35.208 () {42 vars in 942 bytes} [Fri Nov 17 12:02:20 2017] GET /admin/catalog/catalog/add/ => generated 5079 bytes in 1532 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 19/24] 94.181.35.208 () {40 vars in 803 bytes} [Fri Nov 17 12:02:22 2017] GET /admin/jsi18n/ => generated 14962 bytes in 234 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 20/25] 94.181.35.208 () {50 vars in 1206 bytes} [Fri Nov 17 12:02:35 2017] POST /admin/catalog/catalog/add/ => generated 0 bytes in 392 msecs (HTTP/1.1 302) 8 headers in 630 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 21/26] 94.181.35.208 () {44 vars in 1306 bytes} [Fri Nov 17 12:02:35 2017] GET /admin/catalog/catalog/ => generated 5136 bytes in 1790 msecs (HTTP/1.1 200) 8 headers in 463 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 22/27] 94.181.35.208 () {40 vars in 799 bytes} [Fri Nov 17 12:02:37 2017] GET /admin/jsi18n/ => generated 14962 bytes in 226 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 23/28] 94.181.35.208 () {42 vars in 855 bytes} [Fri Nov 17 12:02:42 2017] GET / => generated 150496 bytes in 192 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/purple.jpg
+[pid: 11253|app: 0|req: 4/29] 94.181.35.208 () {40 vars in 827 bytes} [Fri Nov 17 12:02:43 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 518 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11252|app: 0|req: 3/30] 94.181.35.208 () {40 vars in 827 bytes} [Fri Nov 17 12:02:43 2017] GET /img/color/purple.jpg => generated 2094 bytes in 537 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/red.jpg
+Not Found: /img/color/blue.jpg
+[pid: 11254|app: 0|req: 25/31] 94.181.35.208 () {40 vars in 821 bytes} [Fri Nov 17 12:02:43 2017] GET /img/color/red.jpg => generated 2085 bytes in 653 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 11254|app: 0|req: 25/32] 94.181.35.208 () {40 vars in 823 bytes} [Fri Nov 17 12:02:43 2017] GET /img/color/blue.jpg => generated 2088 bytes in 656 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+[pid: 11251|app: 0|req: 1/33] 94.181.35.208 () {40 vars in 825 bytes} [Fri Nov 17 12:02:43 2017] GET /img/color/green.jpg => generated 2091 bytes in 759 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 26/34] 94.181.35.208 () {42 vars in 918 bytes} [Fri Nov 17 12:03:09 2017] GET /admin/catalog/ => generated 3328 bytes in 860 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 27/35] 94.181.35.208 () {42 vars in 936 bytes} [Fri Nov 17 12:03:14 2017] GET /admin/catalog/category/add/ => generated 6227 bytes in 2071 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 28/36] 94.181.35.208 () {40 vars in 804 bytes} [Fri Nov 17 12:03:16 2017] GET /admin/jsi18n/ => generated 14962 bytes in 226 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 29/37] 94.181.35.208 () {50 vars in 1209 bytes} [Fri Nov 17 12:03:52 2017] POST /admin/catalog/category/add/ => generated 0 bytes in 640 msecs (HTTP/1.1 302) 8 headers in 632 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 30/38] 94.181.35.208 () {44 vars in 1310 bytes} [Fri Nov 17 12:03:53 2017] GET /admin/catalog/category/ => generated 4917 bytes in 1673 msecs (HTTP/1.1 200) 8 headers in 463 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 31/39] 94.181.35.208 () {40 vars in 800 bytes} [Fri Nov 17 12:03:55 2017] GET /admin/jsi18n/ => generated 14962 bytes in 229 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 32/40] 94.181.35.208 () {42 vars in 855 bytes} [Fri Nov 17 12:04:00 2017] GET / => generated 150496 bytes in 198 msecs (HTTP/1.1 200) 3 headers in 112 bytes (2 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 11252|app: 0|req: 4/41] 94.181.35.208 () {40 vars in 823 bytes} [Fri Nov 17 12:04:01 2017] GET /img/color/blue.jpg => generated 2088 bytes in 508 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/purple.jpg
+Not Found: /img/color/yellow.jpg
+[pid: 11253|app: 0|req: 5/42] 94.181.35.208 () {40 vars in 827 bytes} [Fri Nov 17 12:04:01 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 523 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11251|app: 0|req: 2/43] 94.181.35.208 () {40 vars in 827 bytes} [Fri Nov 17 12:04:01 2017] GET /img/color/purple.jpg => generated 2094 bytes in 541 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/red.jpg
+Not Found: /img/color/green.jpg
+[pid: 11254|app: 0|req: 34/44] 94.181.35.208 () {40 vars in 821 bytes} [Fri Nov 17 12:04:01 2017] GET /img/color/red.jpg => generated 2085 bytes in 632 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 11254|app: 0|req: 34/45] 94.181.35.208 () {40 vars in 825 bytes} [Fri Nov 17 12:04:01 2017] GET /img/color/green.jpg => generated 2091 bytes in 609 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 35/46] 94.181.35.208 () {42 vars in 919 bytes} [Fri Nov 17 12:07:21 2017] GET /admin/catalog/ => generated 3328 bytes in 852 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 36/47] 94.181.35.208 () {42 vars in 894 bytes} [Fri Nov 17 12:07:30 2017] GET /admin/ => generated 7476 bytes in 1186 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 37/48] 94.181.35.208 () {42 vars in 906 bytes} [Fri Nov 17 12:07:49 2017] GET /admin/auth/user/ => generated 7102 bytes in 1907 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 38/49] 94.181.35.208 () {40 vars in 793 bytes} [Fri Nov 17 12:07:51 2017] GET /admin/jsi18n/ => generated 14962 bytes in 228 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 39/50] 94.181.35.208 () {42 vars in 924 bytes} [Fri Nov 17 12:08:06 2017] GET /admin/auth/user/add/ => generated 6391 bytes in 1606 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 40/51] 94.181.35.208 () {40 vars in 797 bytes} [Fri Nov 17 12:08:08 2017] GET /admin/jsi18n/ => generated 14962 bytes in 229 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 41/52] 94.181.35.208 () {50 vars in 1188 bytes} [Fri Nov 17 12:08:24 2017] POST /admin/auth/user/add/ => generated 6975 bytes in 1640 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 42/53] 94.181.35.208 () {40 vars in 797 bytes} [Fri Nov 17 12:08:25 2017] GET /admin/jsi18n/ => generated 14962 bytes in 225 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 43/54] 94.181.35.208 () {50 vars in 1188 bytes} [Fri Nov 17 12:08:45 2017] POST /admin/auth/user/add/ => generated 0 bytes in 1320 msecs (HTTP/1.1 302) 8 headers in 926 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 44/55] 94.181.35.208 () {44 vars in 1599 bytes} [Fri Nov 17 12:08:47 2017] GET /admin/auth/user/2/change/ => generated 15874 bytes in 3795 msecs (HTTP/1.1 200) 8 headers in 464 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 45/56] 94.181.35.208 () {40 vars in 802 bytes} [Fri Nov 17 12:08:50 2017] GET /admin/jsi18n/ => generated 14962 bytes in 243 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 46/57] 94.181.35.208 () {42 vars in 905 bytes} [Fri Nov 17 12:30:46 2017] GET /admin/ => generated 7478 bytes in 1204 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 47/58] 94.181.35.208 () {42 vars in 918 bytes} [Fri Nov 17 12:30:49 2017] GET /admin/catalog/product/ => generated 4698 bytes in 1685 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 48/59] 94.181.35.208 () {40 vars in 799 bytes} [Fri Nov 17 12:30:51 2017] GET /admin/jsi18n/ => generated 14962 bytes in 229 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 49/60] 94.181.35.208 () {42 vars in 952 bytes} [Fri Nov 17 12:30:53 2017] GET /admin/catalog/product/3/change/ => generated 6752 bytes in 1953 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 50/61] 94.181.35.208 () {40 vars in 808 bytes} [Fri Nov 17 12:30:55 2017] GET /admin/jsi18n/ => generated 14962 bytes in 227 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 51/62] 94.181.35.208 () {50 vars in 1221 bytes} [Fri Nov 17 12:31:00 2017] POST /admin/catalog/product/3/change/ => generated 0 bytes in 484 msecs (HTTP/1.1 302) 8 headers in 580 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 52/63] 94.181.35.208 () {44 vars in 1261 bytes} [Fri Nov 17 12:31:00 2017] GET /admin/catalog/product/ => generated 4885 bytes in 1752 msecs (HTTP/1.1 200) 8 headers in 463 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 53/64] 94.181.35.208 () {40 vars in 799 bytes} [Fri Nov 17 12:31:02 2017] GET /admin/jsi18n/ => generated 14962 bytes in 220 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 54/65] 94.181.35.208 () {42 vars in 902 bytes} [Fri Nov 17 12:37:41 2017] GET /admin/ => generated 7532 bytes in 1132 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 55/66] 94.181.35.208 () {42 vars in 920 bytes} [Fri Nov 17 12:37:47 2017] GET /admin/catalog/category/ => generated 4714 bytes in 1737 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 56/67] 94.181.35.208 () {40 vars in 800 bytes} [Fri Nov 17 12:37:49 2017] GET /admin/jsi18n/ => generated 14962 bytes in 222 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 57/68] 94.181.35.208 () {42 vars in 902 bytes} [Fri Nov 17 12:37:53 2017] GET /admin/ => generated 7532 bytes in 1146 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+Not Found: /catalog-list.html
+[pid: 11254|app: 0|req: 58/69] 94.181.35.208 () {42 vars in 902 bytes} [Fri Nov 17 12:46:42 2017] GET /catalog-list.html => generated 2085 bytes in 128 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 59/70] 94.181.35.208 () {42 vars in 902 bytes} [Fri Nov 17 13:52:06 2017] GET /admin/ => generated 7532 bytes in 1140 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 60/71] 176.59.194.160 () {40 vars in 814 bytes} [Fri Nov 17 14:24:26 2017] GET / => generated 150496 bytes in 198 msecs (HTTP/1.1 200) 3 headers in 112 bytes (2 switches on core 1)
+Not Found: /img/color/red.jpg
+Not Found: /img/color/green.jpg
+[pid: 11254|app: 0|req: 62/72] 88.206.38.244 () {40 vars in 810 bytes} [Fri Nov 17 14:24:39 2017] GET /img/color/red.jpg => generated 2085 bytes in 532 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 11253|app: 0|req: 6/73] 88.206.38.244 () {40 vars in 814 bytes} [Fri Nov 17 14:24:39 2017] GET /img/color/green.jpg => generated 2091 bytes in 463 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 11254|app: 0|req: 62/74] 88.206.38.244 () {40 vars in 812 bytes} [Fri Nov 17 14:24:39 2017] GET /img/color/blue.jpg => generated 2088 bytes in 547 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/purple.jpg
+[pid: 11251|app: 0|req: 4/75] 88.206.38.244 () {40 vars in 816 bytes} [Fri Nov 17 14:24:39 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 543 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11251|app: 0|req: 4/76] 88.206.38.244 () {40 vars in 816 bytes} [Fri Nov 17 14:24:39 2017] GET /img/color/purple.jpg => generated 2094 bytes in 547 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /index.html
+[pid: 11254|app: 0|req: 63/77] 88.206.38.244 () {42 vars in 877 bytes} [Fri Nov 17 14:25:13 2017] GET /index.html => generated 2064 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 64/78] 88.206.38.244 () {42 vars in 844 bytes} [Fri Nov 17 14:25:19 2017] GET / => generated 150496 bytes in 202 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 11252|app: 0|req: 5/79] 88.206.38.244 () {40 vars in 812 bytes} [Fri Nov 17 14:25:20 2017] GET /img/color/blue.jpg => generated 2088 bytes in 458 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/green.jpg
+Not Found: /img/color/red.jpg
+[pid: 11254|app: 0|req: 66/80] 88.206.38.244 () {40 vars in 816 bytes} [Fri Nov 17 14:25:20 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 589 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11253|app: 0|req: 8/82] 88.206.38.244 () {40 vars in 814 bytes} [Fri Nov 17 14:25:20 2017] GET /img/color/green.jpg => generated 2091 bytes in 602 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 66/82] 88.206.38.244 () {40 vars in 810 bytes} [Fri Nov 17 14:25:20 2017] GET /img/color/red.jpg => generated 2085 bytes in 617 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/color/purple.jpg
+[pid: 11253|app: 0|req: 8/83] 88.206.38.244 () {40 vars in 816 bytes} [Fri Nov 17 14:25:20 2017] GET /img/color/purple.jpg => generated 2094 bytes in 576 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 11254|app: 0|req: 67/84] 88.206.38.244 () {40 vars in 749 bytes} [Fri Nov 17 16:55:22 2017] GET /favicon.ico => generated 2067 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 68/85] 88.206.38.244 () {44 vars in 875 bytes} [Fri Nov 17 18:01:54 2017] GET / => generated 150496 bytes in 200 msecs (HTTP/1.1 200) 3 headers in 112 bytes (2 switches on core 0)
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/purple.jpg
+Not Found: /img/color/green.jpg
+[pid: 11253|app: 0|req: 9/86] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:01:54 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 518 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11252|app: 0|req: 6/88] 88.206.38.244 () {42 vars in 845 bytes} [Fri Nov 17 18:01:54 2017] GET /img/color/green.jpg => generated 2091 bytes in 533 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11251|app: 0|req: 5/88] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:01:54 2017] GET /img/color/purple.jpg => generated 2094 bytes in 522 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/blue.jpg
+Not Found: /img/color/red.jpg
+[pid: 11254|app: 0|req: 70/89] 88.206.38.244 () {42 vars in 843 bytes} [Fri Nov 17 18:01:54 2017] GET /img/color/blue.jpg => generated 2088 bytes in 610 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 70/90] 88.206.38.244 () {42 vars in 841 bytes} [Fri Nov 17 18:01:54 2017] GET /img/color/red.jpg => generated 2085 bytes in 632 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 11254|app: 0|req: 71/91] 88.206.38.244 () {42 vars in 844 bytes} [Fri Nov 17 18:05:00 2017] GET / => generated 150496 bytes in 192 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+[pid: 11253|app: 0|req: 10/92] 88.206.38.244 () {42 vars in 845 bytes} [Fri Nov 17 18:05:01 2017] GET /img/color/green.jpg => generated 2091 bytes in 457 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/red.jpg
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/purple.jpg
+[pid: 11252|app: 0|req: 8/94] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:05:01 2017] GET /img/color/purple.jpg => generated 2094 bytes in 586 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 11252|app: 0|req: 8/94] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:05:01 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 593 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 73/95] 88.206.38.244 () {42 vars in 841 bytes} [Fri Nov 17 18:05:01 2017] GET /img/color/red.jpg => generated 2085 bytes in 622 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 11254|app: 0|req: 73/96] 88.206.38.244 () {42 vars in 843 bytes} [Fri Nov 17 18:05:01 2017] GET /img/color/blue.jpg => generated 2088 bytes in 616 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 74/97] 88.206.38.244 () {42 vars in 856 bytes} [Fri Nov 17 18:07:30 2017] GET /admin/ => generated 7532 bytes in 1133 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+Fri Nov 17 18:07:37 2017 - SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) !!!
+Fri Nov 17 18:07:37 2017 - uwsgi_response_writev_headers_and_body_do(): Broken pipe [core/writer.c line 296] during GET /admin/catalog/category/ (88.206.38.244)
+IOError: write error
+[pid: 11254|app: 0|req: 76/98] 88.206.38.244 () {44 vars in 940 bytes} [Fri Nov 17 18:07:35 2017] GET /admin/catalog/category/ => generated 0 bytes in 1975 msecs (HTTP/1.1 200) 7 headers in 0 bytes (0 switches on core 0)
+[pid: 11254|app: 0|req: 76/99] 88.206.38.244 () {44 vars in 938 bytes} [Fri Nov 17 18:07:37 2017] GET /admin/catalog/catalog/ => generated 4934 bytes in 2073 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 77/100] 88.206.38.244 () {42 vars in 819 bytes} [Fri Nov 17 18:07:39 2017] GET /admin/jsi18n/ => generated 14962 bytes in 232 msecs (HTTP/1.1 200) 4 headers in 116 bytes (2 switches on core 0)
+[pid: 11254|app: 0|req: 78/101] 88.206.38.244 () {52 vars in 1144 bytes} [Fri Nov 17 18:07:44 2017] POST /admin/catalog/catalog/ => generated 3464 bytes in 1037 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 80/102] 88.206.38.244 () {52 vars in 1144 bytes} [Fri Nov 17 18:07:46 2017] POST /admin/catalog/catalog/ => generated 0 bytes in 491 msecs (HTTP/1.1 302) 8 headers in 498 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 80/103] 88.206.38.244 () {46 vars in 1190 bytes} [Fri Nov 17 18:07:47 2017] GET /admin/catalog/catalog/ => generated 4839 bytes in 1683 msecs (HTTP/1.1 200) 8 headers in 463 bytes (1 switches on core 1)
+[pid: 11254|app: 0|req: 81/104] 88.206.38.244 () {42 vars in 819 bytes} [Fri Nov 17 18:07:49 2017] GET /admin/jsi18n/ => generated 14962 bytes in 225 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 11254|app: 0|req: 82/105] 88.206.38.244 () {44 vars in 922 bytes} [Fri Nov 17 18:07:51 2017] GET /admin/ => generated 7526 bytes in 1133 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 23:18:45 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x1540500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x1540500 pid: 18811 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18811)
+spawned uWSGI worker 1 (pid: 18819, cores: 2)
+spawned uWSGI worker 2 (pid: 18820, cores: 2)
+spawned uWSGI worker 3 (pid: 18821, cores: 2)
+spawned uWSGI worker 4 (pid: 18822, cores: 2)
+[pid: 18819|app: 0|req: 1/1] 88.206.38.244 () {44 vars in 875 bytes} [Fri Nov 17 18:18:54 2017] GET / => generated 150232 bytes in 574 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /img/color/blue.jpg
+Not Found: /img/color/red.jpg
+[pid: 18819|app: 0|req: 3/2] 88.206.38.244 () {42 vars in 843 bytes} [Fri Nov 17 18:18:55 2017] GET /img/color/blue.jpg => generated 2088 bytes in 856 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18819|app: 0|req: 3/3] 88.206.38.244 () {42 vars in 841 bytes} [Fri Nov 17 18:18:55 2017] GET /img/color/red.jpg => generated 2085 bytes in 888 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/purple.jpg
+Not Found: /img/color/green.jpg
+Not Found: /img/color/yellow.jpg
+[pid: 18821|app: 0|req: 1/5] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:18:55 2017] GET /img/color/purple.jpg => generated 2094 bytes in 1082 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18820|app: 0|req: 1/6] 88.206.38.244 () {42 vars in 845 bytes} [Fri Nov 17 18:18:55 2017] GET /img/color/green.jpg => generated 2091 bytes in 1085 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18822|app: 0|req: 1/6] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:18:55 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 1092 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18822|app: 0|req: 2/7] 88.206.38.244 () {44 vars in 875 bytes} [Fri Nov 17 18:18:57 2017] GET / => generated 150232 bytes in 373 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+Not Found: /img/color/purple.jpg
+Not Found: /img/color/yellow.jpg
+[pid: 18819|app: 0|req: 4/8] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:18:58 2017] GET /img/color/purple.jpg => generated 2094 bytes in 527 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+[pid: 18820|app: 0|req: 2/9] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:18:58 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 538 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 18822|app: 0|req: 3/10] 88.206.38.244 () {42 vars in 845 bytes} [Fri Nov 17 18:18:58 2017] GET /img/color/green.jpg => generated 2091 bytes in 546 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/blue.jpg
+[pid: 18821|app: 0|req: 3/11] 88.206.38.244 () {42 vars in 843 bytes} [Fri Nov 17 18:18:58 2017] GET /img/color/blue.jpg => generated 2088 bytes in 608 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/red.jpg
+[pid: 18821|app: 0|req: 3/12] 88.206.38.244 () {42 vars in 841 bytes} [Fri Nov 17 18:18:58 2017] GET /img/color/red.jpg => generated 2085 bytes in 642 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 18822|app: 0|req: 4/13] 88.206.38.244 () {46 vars in 897 bytes} [Fri Nov 17 18:19:00 2017] GET / => generated 150232 bytes in 196 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 18819|app: 0|req: 6/14] 88.206.38.244 () {46 vars in 894 bytes} [Fri Nov 17 18:19:01 2017] GET /img/color/red.jpg => generated 2085 bytes in 346 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 18821|app: 0|req: 4/15] 88.206.38.244 () {46 vars in 896 bytes} [Fri Nov 17 18:19:01 2017] GET /img/color/blue.jpg => generated 2088 bytes in 388 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+Not Found: /img/color/yellow.jpg
+[pid: 18822|app: 0|req: 5/17] 88.206.38.244 () {46 vars in 898 bytes} [Fri Nov 17 18:19:01 2017] GET /img/color/green.jpg => generated 2091 bytes in 432 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/purple.jpg
+[pid: 18820|app: 0|req: 3/17] 88.206.38.244 () {46 vars in 900 bytes} [Fri Nov 17 18:19:01 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 434 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18819|app: 0|req: 6/18] 88.206.38.244 () {46 vars in 900 bytes} [Fri Nov 17 18:19:01 2017] GET /img/color/purple.jpg => generated 2094 bytes in 449 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 18822|app: 0|req: 6/19] 88.206.38.244 () {46 vars in 882 bytes} [Fri Nov 17 18:19:03 2017] GET /favicon.ico => generated 2067 bytes in 117 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 18819|app: 0|req: 7/20] 88.206.38.244 () {42 vars in 844 bytes} [Fri Nov 17 18:19:28 2017] GET / => generated 150232 bytes in 192 msecs (HTTP/1.1 200) 3 headers in 112 bytes (2 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 18821|app: 0|req: 6/21] 88.206.38.244 () {42 vars in 841 bytes} [Fri Nov 17 18:19:29 2017] GET /img/color/red.jpg => generated 2085 bytes in 510 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/purple.jpg
+[pid: 18820|app: 0|req: 4/22] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:19:29 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 520 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/green.jpg
+[pid: 18819|app: 0|req: 8/24] 88.206.38.244 () {42 vars in 845 bytes} [Fri Nov 17 18:19:29 2017] GET /img/color/green.jpg => generated 2091 bytes in 532 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18822|app: 0|req: 7/24] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:19:29 2017] GET /img/color/purple.jpg => generated 2094 bytes in 538 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/blue.jpg
+[pid: 18821|app: 0|req: 6/25] 88.206.38.244 () {42 vars in 843 bytes} [Fri Nov 17 18:19:29 2017] GET /img/color/blue.jpg => generated 2088 bytes in 560 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18822|app: 0|req: 8/26] 88.206.38.244 () {44 vars in 875 bytes} [Fri Nov 17 18:19:32 2017] GET / => generated 150232 bytes in 196 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+Not Found: /img/color/green.jpg
+Not Found: /img/color/purple.jpg
+[pid: 18821|app: 0|req: 7/27] 88.206.38.244 () {42 vars in 845 bytes} [Fri Nov 17 18:19:32 2017] GET /img/color/green.jpg => generated 2091 bytes in 513 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 18820|app: 0|req: 5/28] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:19:32 2017] GET /img/color/purple.jpg => generated 2094 bytes in 523 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/red.jpg
+[pid: 18819|app: 0|req: 10/29] 88.206.38.244 () {42 vars in 841 bytes} [Fri Nov 17 18:19:32 2017] GET /img/color/red.jpg => generated 2085 bytes in 614 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/blue.jpg
+Not Found: /img/color/yellow.jpg
+[pid: 18822|app: 0|req: 9/30] 88.206.38.244 () {42 vars in 843 bytes} [Fri Nov 17 18:19:32 2017] GET /img/color/blue.jpg => generated 2088 bytes in 602 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18819|app: 0|req: 10/31] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:19:32 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 614 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18822|app: 0|req: 10/32] 88.206.38.244 () {44 vars in 875 bytes} [Fri Nov 17 18:19:33 2017] GET / => generated 150232 bytes in 187 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 18819|app: 0|req: 11/33] 88.206.38.244 () {42 vars in 841 bytes} [Fri Nov 17 18:19:34 2017] GET /img/color/red.jpg => generated 2085 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+Not Found: /img/color/green.jpg
+Not Found: /img/color/yellow.jpg
+[pid: 18820|app: 0|req: 6/34] 88.206.38.244 () {42 vars in 845 bytes} [Fri Nov 17 18:19:34 2017] GET /img/color/green.jpg => generated 2091 bytes in 392 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 18822|app: 0|req: 11/35] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:19:34 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 406 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/purple.jpg
+[pid: 18821|app: 0|req: 9/36] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:19:34 2017] GET /img/color/purple.jpg => generated 2094 bytes in 473 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 18821|app: 0|req: 9/37] 88.206.38.244 () {42 vars in 843 bytes} [Fri Nov 17 18:19:34 2017] GET /img/color/blue.jpg => generated 2088 bytes in 492 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 23:20:32 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x9bd500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 9 seconds on interpreter 0x9bd500 pid: 18873 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18873)
+spawned uWSGI worker 1 (pid: 18919, cores: 2)
+spawned uWSGI worker 2 (pid: 18920, cores: 2)
+spawned uWSGI worker 3 (pid: 18921, cores: 2)
+spawned uWSGI worker 4 (pid: 18922, cores: 2)
+[pid: 18922|app: 0|req: 1/1] 88.206.38.244 () {44 vars in 875 bytes} [Fri Nov 17 18:21:37 2017] GET / => generated 150232 bytes in 502 msecs (HTTP/1.1 200) 3 headers in 112 bytes (2 switches on core 0)
+Not Found: /img/color/blue.jpg
+Not Found: /img/color/red.jpg
+[pid: 18922|app: 0|req: 3/2] 88.206.38.244 () {42 vars in 841 bytes} [Fri Nov 17 18:21:37 2017] GET /img/color/red.jpg => generated 2085 bytes in 900 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 18922|app: 0|req: 3/3] 88.206.38.244 () {42 vars in 843 bytes} [Fri Nov 17 18:21:37 2017] GET /img/color/blue.jpg => generated 2088 bytes in 903 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+Not Found: /img/color/purple.jpg
+Not Found: /img/color/yellow.jpg
+[pid: 18921|app: 0|req: 1/5] 88.206.38.244 () {42 vars in 845 bytes} [Fri Nov 17 18:21:37 2017] GET /img/color/green.jpg => generated 2091 bytes in 1086 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18920|app: 0|req: 1/5] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:21:37 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 1072 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 18919|app: 0|req: 1/6] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:21:37 2017] GET /img/color/purple.jpg => generated 2094 bytes in 1085 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 23:22:20 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0xccd500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xccd500 pid: 19005 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19005)
+spawned uWSGI worker 1 (pid: 19013, cores: 2)
+spawned uWSGI worker 2 (pid: 19014, cores: 2)
+spawned uWSGI worker 3 (pid: 19015, cores: 2)
+spawned uWSGI worker 4 (pid: 19016, cores: 2)
+[pid: 19013|app: 0|req: 1/1] 88.206.38.244 () {44 vars in 875 bytes} [Fri Nov 17 18:22:28 2017] GET / => generated 150232 bytes in 583 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 0)
+Not Found: /img/color/green.jpg
+[pid: 19013|app: 0|req: 2/2] 88.206.38.244 () {42 vars in 845 bytes} [Fri Nov 17 18:22:29 2017] GET /img/color/green.jpg => generated 2091 bytes in 605 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/red.jpg
+Not Found: /img/color/yellow.jpg
+Not Found: /img/color/blue.jpg
+Not Found: /img/color/purple.jpg
+[pid: 19016|app: 0|req: 2/4] 88.206.38.244 () {42 vars in 841 bytes} [Fri Nov 17 18:22:29 2017] GET /img/color/red.jpg => generated 2085 bytes in 1072 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 19016|app: 0|req: 2/4] 88.206.38.244 () {42 vars in 843 bytes} [Fri Nov 17 18:22:29 2017] GET /img/color/blue.jpg => generated 2088 bytes in 1023 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 19015|app: 0|req: 1/6] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:22:29 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 1030 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19014|app: 0|req: 1/6] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:22:29 2017] GET /img/color/purple.jpg => generated 2094 bytes in 1033 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19015|app: 0|req: 2/7] 88.206.38.244 () {44 vars in 875 bytes} [Fri Nov 17 18:22:37 2017] GET / => generated 150232 bytes in 373 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 19016|app: 0|req: 3/8] 88.206.38.244 () {42 vars in 841 bytes} [Fri Nov 17 18:22:37 2017] GET /img/color/red.jpg => generated 2085 bytes in 119 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/color/blue.jpg
+[pid: 19016|app: 0|req: 4/9] 88.206.38.244 () {42 vars in 843 bytes} [Fri Nov 17 18:22:37 2017] GET /img/color/blue.jpg => generated 2088 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/green.jpg
+[pid: 19016|app: 0|req: 5/10] 88.206.38.244 () {42 vars in 845 bytes} [Fri Nov 17 18:22:38 2017] GET /img/color/green.jpg => generated 2091 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /img/color/yellow.jpg
+[pid: 19016|app: 0|req: 7/11] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:22:38 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 133 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/purple.jpg
+[pid: 19016|app: 0|req: 7/12] 88.206.38.244 () {42 vars in 847 bytes} [Fri Nov 17 18:22:38 2017] GET /img/color/purple.jpg => generated 2094 bytes in 126 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+[pid: 19016|app: 0|req: 8/13] 88.206.38.244 () {46 vars in 897 bytes} [Fri Nov 17 18:22:39 2017] GET / => generated 150232 bytes in 443 msecs (HTTP/1.1 200) 3 headers in 112 bytes (1 switches on core 1)
+Not Found: /img/color/red.jpg
+[pid: 19016|app: 0|req: 10/14] 88.206.38.244 () {46 vars in 894 bytes} [Fri Nov 17 18:22:40 2017] GET /img/color/red.jpg => generated 2085 bytes in 414 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+Not Found: /img/color/green.jpg
+[pid: 19014|app: 0|req: 2/15] 88.206.38.244 () {46 vars in 898 bytes} [Fri Nov 17 18:22:40 2017] GET /img/color/green.jpg => generated 2091 bytes in 459 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/blue.jpg
+[pid: 19016|app: 0|req: 10/16] 88.206.38.244 () {46 vars in 896 bytes} [Fri Nov 17 18:22:40 2017] GET /img/color/blue.jpg => generated 2088 bytes in 510 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+Not Found: /img/color/purple.jpg
+Not Found: /img/color/yellow.jpg
+[pid: 19015|app: 0|req: 4/17] 88.206.38.244 () {46 vars in 900 bytes} [Fri Nov 17 18:22:40 2017] GET /img/color/purple.jpg => generated 2094 bytes in 545 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 1)
+[pid: 19015|app: 0|req: 4/18] 88.206.38.244 () {46 vars in 900 bytes} [Fri Nov 17 18:22:40 2017] GET /img/color/yellow.jpg => generated 2094 bytes in 577 msecs (HTTP/1.1 404) 3 headers in 102 bytes (1 switches on core 0)
+Not Found: /favicon.ico
+[pid: 19015|app: 0|req: 5/19] 88.206.38.244 () {46 vars in 882 bytes} [Fri Nov 17 18:22:41 2017] GET /favicon.ico => generated 2067 bytes in 116 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 1)
+[pid: 19016|app: 0|req: 11/20] 88.206.38.244 () {42 vars in 856 bytes} [Fri Nov 17 18:29:43 2017] GET /admin/ => generated 7526 bytes in 2165 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 23:46:05 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x11ac500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x11ac500 pid: 19574 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 19574)
+spawned uWSGI worker 1 (pid: 19583, cores: 2)
+spawned uWSGI worker 2 (pid: 19584, cores: 2)
+spawned uWSGI worker 3 (pid: 19585, cores: 2)
+spawned uWSGI worker 4 (pid: 19586, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./tgs/urls.py", line 23, in <module>
+    url('',include('main.urls')),
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./main/urls.py", line 6, in <module>
+    url(r'^$',views.index, name='main-index'),
+AttributeError: 'module' object has no attribute 'index'
+[pid: 19586|app: 0|req: 1/1] 88.206.38.244 () {44 vars in 875 bytes} [Fri Nov 17 18:46:17 2017] GET / => generated 96070 bytes in 4010 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 0)
+Internal Server Error: /admin/
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./tgs/urls.py", line 23, in <module>
+    url('',include('main.urls')),
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./main/urls.py", line 6, in <module>
+    url(r'^$',views.index, name='main-index'),
+AttributeError: 'module' object has no attribute 'index'
+[pid: 19586|app: 0|req: 2/2] 88.206.38.244 () {42 vars in 856 bytes} [Fri Nov 17 19:23:41 2017] GET /admin/ => generated 96007 bytes in 3668 msecs (HTTP/1.1 500) 4 headers in 129 bytes (2 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Sat Nov 18 00:24:05 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x1a06500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x1a06500 pid: 20447 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20447)
+spawned uWSGI worker 1 (pid: 20459, cores: 2)
+spawned uWSGI worker 2 (pid: 20460, cores: 2)
+spawned uWSGI worker 3 (pid: 20461, cores: 2)
+spawned uWSGI worker 4 (pid: 20462, cores: 2)
+[pid: 20459|app: 0|req: 1/1] 88.206.38.244 () {44 vars in 887 bytes} [Fri Nov 17 19:24:13 2017] GET /admin/ => generated 7526 bytes in 2559 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 20462|app: 0|req: 1/2] 88.206.38.244 () {44 vars in 906 bytes} [Fri Nov 17 19:24:20 2017] GET /admin/ => generated 7526 bytes in 2517 msecs (HTTP/1.1 200) 6 headers in 227 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Sat Nov 18 00:26:24 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x94b500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x94b500 pid: 20552 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20552)
+spawned uWSGI worker 1 (pid: 20561, cores: 2)
+spawned uWSGI worker 2 (pid: 20562, cores: 2)
+spawned uWSGI worker 3 (pid: 20563, cores: 2)
+spawned uWSGI worker 4 (pid: 20564, cores: 2)
+[pid: 20561|app: 0|req: 1/1] 88.206.38.244 () {46 vars in 937 bytes} [Fri Nov 17 19:26:32 2017] GET /admin/ => generated 8183 bytes in 2783 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 20564|app: 0|req: 1/2] 88.206.38.244 () {44 vars in 936 bytes} [Fri Nov 17 19:26:39 2017] GET /admin/main/phone/add/ => generated 4095 bytes in 2978 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 0)
+[pid: 20564|app: 0|req: 2/3] 88.206.38.244 () {42 vars in 818 bytes} [Fri Nov 17 19:26:42 2017] GET /admin/jsi18n/ => generated 14962 bytes in 274 msecs (HTTP/1.1 200) 4 headers in 116 bytes (2 switches on core 1)
+[pid: 20564|app: 0|req: 3/4] 88.206.38.244 () {52 vars in 1211 bytes} [Fri Nov 17 19:26:51 2017] POST /admin/main/phone/add/ => generated 4364 bytes in 1387 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 20564|app: 0|req: 4/5] 88.206.38.244 () {42 vars in 818 bytes} [Fri Nov 17 19:26:52 2017] GET /admin/jsi18n/ => generated 14962 bytes in 223 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+Internal Server Error: /admin/main/phone/add/
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1508, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1408, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1448, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 979, in save_model
+    obj.save()
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/base.py", line 808, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/base.py", line 838, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/base.py", line 924, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/base.py", line 963, in _do_insert
+    using=using, raw=raw)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/query.py", line 1076, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 1107, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/backends/utils.py", line 80, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/utils.py", line 94, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/backends/utils.py", line 65, in execute
+    return self.cursor.execute(sql, params)
+ProgrammingError: relation "main_phone" does not exist
+LINE 1: INSERT INTO "main_phone" ("phone_number") VALUES ('8(351)263...
+                    ^
+
+[pid: 20564|app: 0|req: 5/6] 88.206.38.244 () {52 vars in 1211 bytes} [Fri Nov 17 19:27:16 2017] POST /admin/main/phone/add/ => generated 161434 bytes in 6068 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+[pid: 20564|app: 0|req: 6/7] 88.206.38.244 () {42 vars in 856 bytes} [Fri Nov 17 19:29:02 2017] GET /admin/ => generated 8183 bytes in 1217 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 20564|app: 0|req: 7/8] 88.206.38.244 () {44 vars in 936 bytes} [Fri Nov 17 19:29:06 2017] GET /admin/main/phone/add/ => generated 4095 bytes in 1353 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 20564|app: 0|req: 8/9] 88.206.38.244 () {42 vars in 818 bytes} [Fri Nov 17 19:29:07 2017] GET /admin/jsi18n/ => generated 14962 bytes in 223 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 20564|app: 0|req: 9/10] 88.206.38.244 () {52 vars in 1211 bytes} [Fri Nov 17 19:29:14 2017] POST /admin/main/phone/add/ => generated 0 bytes in 353 msecs (HTTP/1.1 302) 8 headers in 604 bytes (1 switches on core 0)
+Internal Server Error: /admin/main/phone/
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 551, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/views/decorators/cache.py", line 57, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/sites.py", line 224, in inner
+    return view(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 67, in _wrapper
+    return bound_func(*args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 149, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/decorators.py", line 63, in bound_func
+    return func.__get__(self, type(self))(*args2, **kwargs2)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/contrib/admin/options.py", line 1662, in changelist_view
+    selection_note=_('0 of %(cnt)s selected') % {'cnt': len(cl.result_list)},
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/query.py", line 232, in __len__
+    self._fetch_all()
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/query.py", line 1118, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/query.py", line 53, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 871, in execute_sql
+    sql, params = self.as_sql()
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 423, in as_sql
+    extra_select, order_by, group_by = self.pre_sql_setup()
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 47, in pre_sql_setup
+    order_by = self.get_order_by()
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 298, in get_order_by
+    field, self.query.get_meta(), default_order=asc))
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 601, in find_ordering_name
+    field, targets, alias, joins, path, opts = self._setup_joins(pieces, opts, alias)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 634, in _setup_joins
+    pieces, opts, alias)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1417, in setup_joins
+    names, opts, allow_many, fail_on_missing=True)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/db/models/sql/query.py", line 1352, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'phone_namber' into field. Choices are: id, phone_number
+[pid: 20564|app: 0|req: 10/11] 88.206.38.244 () {46 vars in 1290 bytes} [Fri Nov 17 19:29:15 2017] GET /admin/main/phone/ => generated 145254 bytes in 5583 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Sat Nov 18 00:32:45 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x1aa6500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x1aa6500 pid: 20764 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20764)
+spawned uWSGI worker 1 (pid: 20772, cores: 2)
+spawned uWSGI worker 2 (pid: 20773, cores: 2)
+spawned uWSGI worker 3 (pid: 20774, cores: 2)
+spawned uWSGI worker 4 (pid: 20775, cores: 2)
+[pid: 20775|app: 0|req: 1/1] 88.206.38.244 () {42 vars in 1172 bytes} [Fri Nov 17 19:32:56 2017] GET /admin/ => generated 8377 bytes in 2739 msecs (HTTP/1.1 200) 7 headers in 309 bytes (1 switches on core 0)
+[pid: 20775|app: 0|req: 2/2] 88.206.38.244 () {44 vars in 928 bytes} [Fri Nov 17 19:33:05 2017] GET /admin/main/phone/ => generated 4441 bytes in 1647 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 20775|app: 0|req: 3/3] 88.206.38.244 () {42 vars in 814 bytes} [Fri Nov 17 19:33:06 2017] GET /admin/jsi18n/ => generated 14962 bytes in 267 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 20775|app: 0|req: 4/4] 88.206.38.244 () {44 vars in 957 bytes} [Fri Nov 17 19:33:15 2017] GET /admin/main/phone/1/change/ => generated 4341 bytes in 1378 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 20775|app: 0|req: 5/5] 88.206.38.244 () {42 vars in 823 bytes} [Fri Nov 17 19:33:16 2017] GET /admin/jsi18n/ => generated 14962 bytes in 228 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 20775|app: 0|req: 6/6] 88.206.38.244 () {44 vars in 936 bytes} [Fri Nov 17 19:33:21 2017] GET /admin/main/ => generated 2422 bytes in 819 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Sat Nov 18 00:46:29 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x64c500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x64c500 pid: 21050 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21050)
+spawned uWSGI worker 1 (pid: 21059, cores: 2)
+spawned uWSGI worker 2 (pid: 21060, cores: 2)
+spawned uWSGI worker 3 (pid: 21061, cores: 2)
+spawned uWSGI worker 4 (pid: 21062, cores: 2)
+[pid: 21062|app: 0|req: 1/1] 88.206.38.244 () {46 vars in 967 bytes} [Fri Nov 17 19:46:38 2017] GET /admin/main/ => generated 2443 bytes in 2379 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+[pid: 21062|app: 0|req: 2/2] 88.206.38.244 () {44 vars in 933 bytes} [Fri Nov 17 19:46:45 2017] GET /admin/main/phone/ => generated 4483 bytes in 1678 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 21062|app: 0|req: 3/3] 88.206.38.244 () {42 vars in 814 bytes} [Fri Nov 17 19:46:47 2017] GET /admin/jsi18n/ => generated 14962 bytes in 268 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Sat Nov 18 00:48:51 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x1be6500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 8 seconds on interpreter 0x1be6500 pid: 21150 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 21150)
+spawned uWSGI worker 1 (pid: 21156, cores: 2)
+spawned uWSGI worker 2 (pid: 21157, cores: 2)
+spawned uWSGI worker 3 (pid: 21158, cores: 2)
+spawned uWSGI worker 4 (pid: 21159, cores: 2)
+[pid: 21156|app: 0|req: 1/1] 88.206.38.244 () {46 vars in 964 bytes} [Fri Nov 17 19:48:59 2017] GET /admin/main/phone/ => generated 4593 bytes in 3309 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 21158|app: 0|req: 1/2] 88.206.38.244 () {42 vars in 814 bytes} [Fri Nov 17 19:49:02 2017] GET /admin/jsi18n/ => generated 14962 bytes in 493 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 0)
+[pid: 21158|app: 0|req: 2/3] 88.206.38.244 () {44 vars in 927 bytes} [Fri Nov 17 19:49:14 2017] GET /admin/main/ => generated 2443 bytes in 2103 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 21158|app: 0|req: 3/4] 88.206.38.244 () {44 vars in 911 bytes} [Fri Nov 17 19:49:22 2017] GET /admin/ => generated 8219 bytes in 1273 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 198, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view main.views.index didn't return an HttpResponse object. It returned None instead.
+[pid: 21158|app: 0|req: 4/5] 88.206.38.244 () {44 vars in 894 bytes} [Fri Nov 17 19:55:51 2017] GET / => generated 50690 bytes in 2394 msecs (HTTP/1.1 500) 4 headers in 129 bytes (1 switches on core 1)
+[pid: 21158|app: 0|req: 5/6] 88.206.38.244 () {44 vars in 911 bytes} [Fri Nov 17 19:56:02 2017] GET /admin/ => generated 8219 bytes in 1201 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 0)
