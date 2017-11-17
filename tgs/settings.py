@@ -28,7 +28,9 @@ SECRET_KEY = '=7eojy$$=8i+0ax2=^r2vqd=8q!=(yuz#tc3@6c-bow%q@0@*a'
 DEBUG = True
 
 ALLOWED_HOSTS = [u'192.168.0.3',
-		u'tum0xa.dlinkddns.com',]
+		u'tum0xa.dlinkddns.com',
+		u'tigers-fur.ru',
+]
 
 		
 
@@ -36,6 +38,7 @@ ALLOWED_HOSTS = [u'192.168.0.3',
 # Application definition
 
 INSTALLED_APPS = [
+	'main.apps.MainConfig',
 	'catalog.apps.CatalogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
