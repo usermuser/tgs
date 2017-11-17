@@ -8,6 +8,7 @@ class Catalog(models.Model):
     name = models.CharField(max_length=255)
     slug = models.SlugField(max_length=150)
     description = models.TextField()
+    category = models.ManyToManyField(Category)
 
     class Meta:
         ordering = ('name',)
@@ -25,7 +26,7 @@ class Product(models.Model):
     price = models.DecimalField(max_digits=8, decimal_places=2)
     available = models.BooleanField(default=True)
 #    catalog = for Key
-#    category = for key
+#   category = for key
 
     class Meta:
         ordering = ('name',)
@@ -39,10 +40,4 @@ class Category(models.Model):
     name = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255)
     description = models.TextField(blank=True)
-    catalog = models.ManyToManyField(Catalog)
-
-    class Meta:
-        ordering = ('name',)
-
-    def __str__(self):
-        return self.name
+    catalog = models.ManyToManyField(Catalog, on_delete=models.CASCADE,)
