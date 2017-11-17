@@ -2748,3 +2748,1581 @@ Not Found: /js/gmap.js
 [pid: 26015|app: 0|req: 237/411] 176.59.194.160 () {44 vars in 1005 bytes} [Fri Nov 17 02:58:17 2017] GET /admin/catalog/catalog/ => generated 4551 bytes in 1664 msecs (HTTP/1.1 200) 8 headers in 463 bytes (1 switches on core 1)
 [pid: 26015|app: 0|req: 238/412] 176.59.194.160 () {42 vars in 765 bytes} [Fri Nov 17 02:58:19 2017] GET /admin/jsi18n/ => generated 3217 bytes in 205 msecs (HTTP/1.1 200) 4 headers in 115 bytes (1 switches on core 0)
 [pid: 26015|app: 0|req: 239/413] 176.59.194.160 () {44 vars in 846 bytes} [Fri Nov 17 02:58:28 2017] GET /admin/ => generated 6383 bytes in 1081 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc8 in position 271: invalid continuation byte
+[pid: 26015|app: 0|req: 240/414] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 04:43:51 2017] GET / => generated 115666 bytes in 14457 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc8 in position 271: invalid continuation byte
+[pid: 26015|app: 0|req: 241/415] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 04:46:58 2017] GET / => generated 115666 bytes in 13678 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 09:50:34 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x11a2c60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x11a2c60 pid: 2793 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2793)
+spawned uWSGI worker 1 (pid: 2799, cores: 2)
+spawned uWSGI worker 2 (pid: 2800, cores: 2)
+spawned uWSGI worker 3 (pid: 2801, cores: 2)
+spawned uWSGI worker 4 (pid: 2802, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc8 in position 271: invalid continuation byte
+[pid: 2802|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 04:50:42 2017] GET / => generated 115758 bytes in 13982 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc8 in position 271: invalid continuation byte
+[pid: 2802|app: 0|req: 2/2] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 04:53:15 2017] GET / => generated 115758 bytes in 13792 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 09:54:53 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x1474c60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 6 seconds on interpreter 0x1474c60 pid: 2919 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 2919)
+spawned uWSGI worker 1 (pid: 2925, cores: 2)
+spawned uWSGI worker 2 (pid: 2926, cores: 2)
+spawned uWSGI worker 3 (pid: 2927, cores: 2)
+spawned uWSGI worker 4 (pid: 2928, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc8 in position 343: invalid continuation byte
+[pid: 2925|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 04:55:01 2017] GET / => generated 115798 bytes in 14601 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 09:59:31 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x630c60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x630c60 pid: 3062 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3062)
+spawned uWSGI worker 1 (pid: 3070, cores: 2)
+spawned uWSGI worker 2 (pid: 3071, cores: 2)
+spawned uWSGI worker 3 (pid: 3072, cores: 2)
+spawned uWSGI worker 4 (pid: 3073, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc8 in position 347: invalid continuation byte
+[pid: 3073|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 05:00:21 2017] GET / => generated 115828 bytes in 14460 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 10:04:59 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x1e4cc60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 6 seconds on interpreter 0x1e4cc60 pid: 3170 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3170)
+spawned uWSGI worker 1 (pid: 3178, cores: 2)
+spawned uWSGI worker 2 (pid: 3179, cores: 2)
+spawned uWSGI worker 3 (pid: 3180, cores: 2)
+spawned uWSGI worker 4 (pid: 3181, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc8 in position 347: invalid continuation byte
+[pid: 3181|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 05:06:02 2017] GET / => generated 115828 bytes in 14275 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc8 in position 347: invalid continuation byte
+[pid: 3181|app: 0|req: 2/2] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 05:08:14 2017] GET / => generated 115828 bytes in 13939 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 1)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 10:10:07 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0xbddc60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xbddc60 pid: 3344 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3344)
+spawned uWSGI worker 1 (pid: 3350, cores: 2)
+spawned uWSGI worker 2 (pid: 3351, cores: 2)
+spawned uWSGI worker 3 (pid: 3352, cores: 2)
+spawned uWSGI worker 4 (pid: 3353, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc8 in position 349: invalid continuation byte
+[pid: 3353|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 05:10:20 2017] GET / => generated 115865 bytes in 14635 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 10:31:55 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0xa32c60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xa32c60 pid: 3794 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3794)
+spawned uWSGI worker 1 (pid: 3802, cores: 2)
+spawned uWSGI worker 2 (pid: 3803, cores: 2)
+spawned uWSGI worker 3 (pid: 3804, cores: 2)
+spawned uWSGI worker 4 (pid: 3805, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xc8 in position 350: invalid continuation byte
+[pid: 3805|app: 0|req: 1/1] 176.59.194.160 () {42 vars in 768 bytes} [Fri Nov 17 05:32:06 2017] GET / => generated 115887 bytes in 14454 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 10:34:45 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x1657c60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x1657c60 pid: 3897 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 3897)
+spawned uWSGI worker 1 (pid: 3906, cores: 2)
+spawned uWSGI worker 2 (pid: 3907, cores: 2)
+spawned uWSGI worker 3 (pid: 3908, cores: 2)
+spawned uWSGI worker 4 (pid: 3909, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xca in position 2487: invalid continuation byte
+[pid: 3909|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 05:34:52 2017] GET / => generated 116316 bytes in 14370 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 10:42:05 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x19f3c60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x19f3c60 pid: 4126 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4126)
+spawned uWSGI worker 1 (pid: 4134, cores: 2)
+spawned uWSGI worker 2 (pid: 4135, cores: 2)
+spawned uWSGI worker 3 (pid: 4136, cores: 2)
+spawned uWSGI worker 4 (pid: 4137, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xca in position 2511: invalid continuation byte
+[pid: 4137|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 05:42:22 2017] GET / => generated 116291 bytes in 14858 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xca in position 2511: invalid continuation byte
+[pid: 4137|app: 0|req: 2/2] 176.59.215.6 () {40 vars in 665 bytes} [Fri Nov 17 05:56:30 2017] GET / => generated 115265 bytes in 13893 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 1)
+Not Found: /favicon.ico
+[pid: 4137|app: 0|req: 3/3] 176.59.215.6 () {36 vars in 597 bytes} [Fri Nov 17 05:56:45 2017] GET /favicon.ico => generated 2067 bytes in 118 msecs (HTTP/1.1 404) 3 headers in 102 bytes (2 switches on core 0)
+[pid: 4137|app: 0|req: 4/4] 176.59.215.6 () {38 vars in 620 bytes} [Fri Nov 17 05:58:12 2017] GET /admin => generated 0 bytes in 14 msecs (HTTP/1.1 301) 3 headers in 112 bytes (1 switches on core 1)
+[pid: 4137|app: 0|req: 5/5] 176.59.215.6 () {38 vars in 622 bytes} [Fri Nov 17 05:58:12 2017] GET /admin/ => generated 0 bytes in 794 msecs (HTTP/1.1 302) 7 headers in 265 bytes (1 switches on core 0)
+[pid: 4137|app: 0|req: 6/6] 176.59.215.6 () {38 vars in 659 bytes} [Fri Nov 17 05:58:13 2017] GET /admin/login/?next=/admin/ => generated 1736 bytes in 797 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 1)
+[pid: 4137|app: 0|req: 7/7] 176.59.215.6 () {46 vars in 934 bytes} [Fri Nov 17 05:58:25 2017] POST /admin/login/?next=/admin/ => generated 0 bytes in 1265 msecs (HTTP/1.1 302) 9 headers in 531 bytes (1 switches on core 0)
+[pid: 4137|app: 0|req: 8/8] 176.59.215.6 () {42 vars in 824 bytes} [Fri Nov 17 05:58:27 2017] GET /admin/ => generated 6730 bytes in 1143 msecs (HTTP/1.1 200) 6 headers in 227 bytes (1 switches on core 1)
+[pid: 4137|app: 0|req: 9/9] 176.59.215.6 () {42 vars in 837 bytes} [Fri Nov 17 05:58:32 2017] GET /admin/catalog/catalog/ => generated 4707 bytes in 1702 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 4137|app: 0|req: 10/10] 176.59.215.6 () {40 vars in 740 bytes} [Fri Nov 17 05:58:34 2017] GET /admin/jsi18n/ => generated 14962 bytes in 306 msecs (HTTP/1.1 200) 4 headers in 116 bytes (1 switches on core 1)
+[pid: 4137|app: 0|req: 11/11] 176.59.215.6 () {42 vars in 871 bytes} [Fri Nov 17 05:59:14 2017] GET /admin/catalog/catalog/5/change/ => generated 5344 bytes in 1565 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 4137|app: 0|req: 12/12] 176.59.215.6 () {40 vars in 749 bytes} [Fri Nov 17 05:59:16 2017] GET /admin/jsi18n/ => generated 14962 bytes in 225 msecs (HTTP/1.1 200) 4 headers in 116 bytes (2 switches on core 1)
+[pid: 4137|app: 0|req: 13/13] 176.59.215.6 () {42 vars in 837 bytes} [Fri Nov 17 05:59:22 2017] GET /admin/catalog/catalog/ => generated 4707 bytes in 1697 msecs (HTTP/1.1 200) 7 headers in 381 bytes (1 switches on core 0)
+[pid: 4137|app: 0|req: 14/14] 176.59.215.6 () {42 vars in 837 bytes} [Fri Nov 17 05:59:44 2017] GET /admin/catalog/catalog/ => generated 4707 bytes in 1834 msecs (HTTP/1.1 200) 7 headers in 381 bytes (2 switches on core 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xca in position 2511: invalid continuation byte
+[pid: 4137|app: 0|req: 15/15] 176.59.215.6 () {40 vars in 743 bytes} [Fri Nov 17 05:59:50 2017] GET / => generated 116027 bytes in 13817 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:09:27 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0xe19500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xe19500 pid: 4625 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4625)
+spawned uWSGI worker 1 (pid: 4633, cores: 2)
+spawned uWSGI worker 2 (pid: 4634, cores: 2)
+spawned uWSGI worker 3 (pid: 4635, cores: 2)
+spawned uWSGI worker 4 (pid: 4636, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xca in position 2511: invalid continuation byte
+[pid: 4633|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 06:09:34 2017] GET / => generated 116307 bytes in 14301 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:13:06 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x2028c60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x2028c60 pid: 5088 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5088)
+spawned uWSGI worker 1 (pid: 5094, cores: 2)
+spawned uWSGI worker 2 (pid: 5095, cores: 2)
+spawned uWSGI worker 3 (pid: 5096, cores: 2)
+spawned uWSGI worker 4 (pid: 5097, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xca in position 2511: invalid continuation byte
+[pid: 5097|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 06:13:18 2017] GET / => generated 116291 bytes in 14763 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:15:33 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x1707c60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x1707c60 pid: 5146 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5146)
+spawned uWSGI worker 1 (pid: 5154, cores: 2)
+spawned uWSGI worker 2 (pid: 5155, cores: 2)
+spawned uWSGI worker 3 (pid: 5156, cores: 2)
+spawned uWSGI worker 4 (pid: 5157, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 15, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xca in position 2511: invalid continuation byte
+[pid: 5157|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 06:15:41 2017] GET / => generated 116291 bytes in 14264 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:29:11 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0x1c43c60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0x1c43c60 pid: 5454 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5454)
+spawned uWSGI worker 1 (pid: 5460, cores: 2)
+spawned uWSGI worker 2 (pid: 5461, cores: 2)
+spawned uWSGI worker 3 (pid: 5462, cores: 2)
+spawned uWSGI worker 4 (pid: 5463, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 172, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 362, in resolve
+    for pattern in self.url_patterns:
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 405, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/utils/functional.py", line 35, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/urls/resolvers.py", line 398, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./tgs/urls.py", line 23, in <module>
+    url(r'^$',include('catalog.urls')),
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/conf/urls/__init__.py", line 50, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "./catalog/urls.py", line 4, in <module>
+    from . import views
+  File "./catalog/views.py", line 6
+    from __future__ import unicode_literals
+SyntaxError: from __future__ imports must occur at the beginning of the file
+[pid: 5463|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 06:29:19 2017] GET / => generated 96606 bytes in 4039 msecs (HTTP/1.1 500) 4 headers in 129 bytes (2 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:30:07 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0xaf9c60
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xaf9c60 pid: 5490 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5490)
+spawned uWSGI worker 1 (pid: 5498, cores: 2)
+spawned uWSGI worker 2 (pid: 5499, cores: 2)
+spawned uWSGI worker 3 (pid: 5500, cores: 2)
+spawned uWSGI worker 4 (pid: 5501, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 16, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xca in position 2511: invalid continuation byte
+[pid: 5498|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 06:30:14 2017] GET / => generated 116297 bytes in 14808 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:33:27 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/envdj111/
+Python main interpreter initialized at 0xb7d500
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 358400 bytes (350 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+added ../ to pythonpath.
+WSGI app 0 (mountpoint='') ready in 7 seconds on interpreter 0xb7d500 pid: 5566 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 5566)
+spawned uWSGI worker 1 (pid: 5575, cores: 2)
+spawned uWSGI worker 2 (pid: 5576, cores: 2)
+spawned uWSGI worker 3 (pid: 5577, cores: 2)
+spawned uWSGI worker 4 (pid: 5578, cores: 2)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./catalog/views.py", line 16, in index
+    template = loader.get_template('catalog/index.html')
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loader.py", line 21, in get_template
+    return engine.get_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/backends/django.py", line 39, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 162, in get_template
+    template, origin = self.find_template(template_name)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/engine.py", line 136, in find_template
+    name, template_dirs=dirs, skip=skip,
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/base.py", line 38, in get_template
+    contents = self.get_contents(origin)
+  File "/home/tgs/envdj111/local/lib/python2.7/site-packages/django/template/loaders/filesystem.py", line 29, in get_contents
+    return fp.read()
+  File "/home/tgs/envdj111/lib/python2.7/codecs.py", line 296, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf8' codec can't decode byte 0xca in position 2511: invalid continuation byte
+[pid: 5578|app: 0|req: 1/1] 176.59.194.160 () {44 vars in 799 bytes} [Fri Nov 17 06:33:36 2017] GET / => generated 116313 bytes in 14614 msecs (HTTP/1.1 500) 4 headers in 130 bytes (1 switches on core 0)
+SIGINT/SIGQUIT received...killing workers...
+worker 1 buried after 2 seconds
+worker 2 buried after 2 seconds
+worker 3 buried after 2 seconds
+worker 4 buried after 2 seconds
+goodbye to uWSGI.
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:53:23 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:53:24 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:53:27 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:53:30 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:53:51 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:53:52 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:53:55 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 11:53:58 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 12:20:14 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 12:20:15 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 12:20:17 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 12:20:21 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 12:20:45 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 12:20:46 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 12:20:49 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
+[uWSGI] getting INI configuration from /home/tgs/tgs/configs/uwsgi.ini
+open("./python3_plugin.so"): No such file or directory [core/utils.c line 3686]
+!!! UNABLE to load uWSGI plugin: ./python3_plugin.so: cannot open shared object file: No such file or directory !!!
+*** Starting uWSGI 2.0.15 (32bit) on [Fri Nov 17 12:20:52 2017] ***
+compiled with version: 4.9.2 on 14 November 2017 08:20:47
+os: Linux-4.4.50+ #970 Mon Feb 20 19:12:50 GMT 2017
+nodename: raspberrypi
+machine: armv6l
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+setgid() to 1002
+setuid() to 1002
+chdir() to /home/tgs/tgs/
+your processes number limit is 3410
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/tgs/tgs/tgs.sock fd 3
+Python version: 2.7.9 (default, Sep 17 2016, 20:55:23)  [GCC 4.9.2]
+Set PythonHome to /home/tgs/tgs/envdj111p3/
+ImportError: No module named site
+VACUUM: unix socket /home/tgs/tgs/tgs.sock removed.
