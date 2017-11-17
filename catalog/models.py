@@ -8,7 +8,7 @@ class Catalog(models.Model):
     name = models.CharField(max_length=255)
     slug = models.SlugField(max_length=150)
     description = models.TextField()
-    category = models.ManyToManyField(Category)
+#    category = models.ManyToManyField(Category)
 
     class Meta:
         ordering = ('name',)
@@ -40,4 +40,10 @@ class Category(models.Model):
     name = models.CharField(max_length=255)
     slug = models.SlugField(max_length=255)
     description = models.TextField(blank=True)
-    catalog = models.ManyToManyField(Catalog, on_delete=models.CASCADE,)
+    catalog = models.ManyToManyField(Catalog)
+#    catalog = models.ForeignKey('Catalog',on_delete=models.CASCADE,)
+    class Meta:
+        ordering = ('name',)
+
+    def __str__(self):
+        return self.name
