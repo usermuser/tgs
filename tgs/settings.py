@@ -30,6 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = [u'192.168.0.3',
 		u'tum0xa.dlinkddns.com',
 		u'tigers-fur.ru',
+        u'localhost',
+        u'127.0.0.1',
 ]
 
 		
@@ -147,3 +149,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+# This try construction is tested and working
+# Soon we wil move SECRET_KEY, DATABASE, DEBUG, ALLOWED settings in local settings
+try:
+    from .local_settings_rus import *
+except ImportError:
+    pass
