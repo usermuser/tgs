@@ -1,3 +1,4 @@
+{% load staticfiles %}
 {% load static %}
 <html lang="en">
 <head>
@@ -9,17 +10,18 @@
 <title>Кожа и Меха. Интернет-магазин Tigers</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700ii%7CRoboto:300,300i,400,400i,500,500i,700,700i,900,900i&amp;subset=cyrillic" rel="stylesheet">
 
-    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}>
-    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}">
-    <link rel="stylesheet" href="static/css/ion.rangeSlider.css">
-    <link rel="stylesheet" href="static/css/ion.rangeSlider.skinFlat.css">
-    <link rel="stylesheet" href="static/css/jquery.bxslider.css">
-    <link rel="stylesheet" href="static/css/jquery.fancybox.css">
-    <link rel="stylesheet" href="static/css/flexslider.css">
-    <link rel="stylesheet" href="static/css/swiper.css">
-    <link rel="stylesheet" href="static/css/swiper.css">
-    <link rel="stylesheet" href="static/css/style.css">
-    <link rel="stylesheet" href="static/css/media.css">
+    <link rel="stylesheet" href="{% static "css/font-awesome.min.css" %}">
+    <!-- <link rel="stylesheet" href="{% static "css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="{% static "css/bootstrap.min.css" %}" >
+    <link rel="stylesheet" href="{% static "css/ion.rangeSlider.css" %}">
+    <link rel="stylesheet" href="{% static "css/ion.rangeSlider.skinFlat.css" %}">
+    <link rel="stylesheet" href="{% static "css/jquery.bxslider.css" %}">
+    <link rel="stylesheet" href="{% static "css/jquery.fancybox.css" %}">
+    <link rel="stylesheet" href="{% static "css/flexslider.css" %}">
+    <link rel="stylesheet" href="{% static "css/swiper.css" %}">
+    <link rel="stylesheet" href="{% static "css/swiper.css" %}">
+    <link rel="stylesheet" href="{% static "css/style.css" %}">
+    <link rel="stylesheet" href="{% static "css/media.css" %}">
 
 </head>
 <body>
@@ -58,7 +60,7 @@
         <div class="container header-middle-cont">
             <div class="toplogo">
                 <a href="index.html">
-                    <img src="static/img/tigers-logo.png" alt="Tigers - Кожа и меха">
+                    <img src="{% static "img/tigers-logo.png" alt="Tigers - Кожа и меха" %}">
                 </a>
             </div>
             <div class="shop-menu">
@@ -373,8 +375,8 @@
                             </p>
                             <div class="prod-i-skuwrapcolor">
                                 <ul class="prod-i-skucolor">
-                                    <li class="bx_active"><img src="static/img/color/red.jpg" alt="Red"></li>
-                                    <li><img src="static/img/color/blue.jpg" alt="Blue"></li>
+                                    <li class="bx_active"><img src="{% static "img/color/red.jpg" %}" alt="Red"></li>
+                                    <li><img src="{% static "img/color/blue.jpg" %}" alt="Blue"></li>
                                 </ul>
                             </div>
                         </li>
@@ -1107,8 +1109,8 @@
                             </p>
                             <div class="prod-i-skuwrapcolor">
                                 <ul class="prod-i-skucolor">
-                                    <li class="bx_active"><img src="static/img/color/red.jpg" alt="Red"></li>
-                                    <li><img src="static/img/color/blue.jpg" alt="Blue"></li>
+                                    <li class="bx_active"><img src="{% static "img/color/red.jpg" %}" alt="Red"></li>
+                                    <li><img src="{% static "img/color/blue.jpg" %}" alt="Blue"></li>
                                 </ul>
                             </div>
                         </li>
@@ -1858,7 +1860,7 @@
             <div class="fr-slider">
                 <ul class="slides">
                     <li>
-                        <img src="static/img/slider/slide1.jpg" alt="">
+                        <img src="{% static "img/slider/slide1.jpg" %}" alt="">
                         <div class="fr-slider-cont">
                             <h3>РАССПРОДАЖА -30%</h3>
                             <p>Зимняя коллекция для женищин. <br>Мы обязателььно что-нибудь для Вас подберем.</p>
@@ -1868,7 +1870,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="static/img/slider/slide1.jpg" alt="">
+                        <img src="{% static "img/slider/slide1.jpg" %}" alt="">
                         <div class="fr-slider-cont">
                             <h3>НОВАЯ КОЛЛЕКЦИЯ</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Aliquam consequuntur dolorem doloribus fuga harum</p>
@@ -1878,7 +1880,7 @@
                         </div>
                     </li>
                     <li>
-                        <img src="static/slider/slide1.jpg" alt="">
+                        <img src="{% static "slider/slide1.jpg" %}" alt="">
                         <div class="fr-slider-cont">
                             <h3>ШУБЫ В ТРЕНДЕ</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.<br>Aliquam consequuntur dolorem doloribus fuga harum</p>
@@ -2335,7 +2337,7 @@
             <div class="row">
                 <div class="companyinfo">
                     <a href="index.html">
-                        <img src="static/img/tigers-logo-b.png" alt="Tigers - Кожа и Меха">
+                        <img src="{% static "img/tigers-logo-b.png" %}" alt="Tigers - Кожа и Меха">
                         Tigers - Интернет-магазин одежды из кожи и меха
                     </a>
                 </div>
@@ -2532,21 +2534,21 @@
 
 
 <!-- jQuery plugins/scripts - start -->
-<script src="static/js/jquery-1.11.2.min.js"></script>
-<script src="static/js/jquery.bxslider.min.js"></script>
-<script src="static/js/fancybox/fancybox.js"></script>
-<script src="static/js/fancybox/helpers/jquery.fancybox-thumbs.js"></script>
-<script src="static/js/jquery.flexslider-min.js"></script>
-<script src="static/js/swiper.jquery.min.js"></script>
-<script src="static/js/jquery.waypoints.min.js"></script>
-<script src="static/js/progressbar.min.js"></script>
-<script src="static/js/ion.rangeSlider.min.js"></script>
-<script src="static/js/chosen.jquery.min.js"></script>
-<script src="static/js/jQuery.Brazzers-Carousel.js"></script>
-<script src="static/js/plugins.js"></script>
-<script src="static/js/main.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhAYvx0GmLyN5hlf6Uv_e9pPvUT3YpozE"></script>
-<script src="static/js/gmap.js"></script>
+<script src="{% static "js/jquery-1.11.2.min.js" %}"></script>
+<script src="{% static "js/jquery.bxslider.min.js" %}"></script>
+<script src="{% static "js/fancybox/fancybox.js" %}"></script>
+<script src="{% static "js/fancybox/helpers/jquery.fancybox-thumbs.js" %}"></script>
+<script src="{% static "js/jquery.flexslider-min.js" %}"></script>
+<script src="{% static "js/swiper.jquery.min.js" %}"></script>
+<script src="{% static "js/jquery.waypoints.min.js" %}"></script>
+<script src="{% static "js/progressbar.min.js" %}"></script>
+<script src="{% static "js/ion.rangeSlider.min.js" %}"></script>
+<script src="{% static "js/chosen.jquery.min.js" %}"></script>
+<script src="{% static "js/jQuery.Brazzers-Carousel.js" %}"></script>
+<script src="{% static "js/plugins.js" %}"></script>
+<script src="{% static "js/main.js" %}"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhAYvx0GmLyN5hlf6Uv_e9pPvUT3YpozE" %}"></script>
+<script src="{% static "js/gmap.js" %}"></script>
 <!-- jQuery plugins/scripts - end -->
 
 </body>

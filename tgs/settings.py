@@ -28,20 +28,17 @@ SECRET_KEY = '=7eojy$$=8i+0ax2=^r2vqd=8q!=(yuz#tc3@6c-bow%q@0@*a'
 DEBUG = True
 
 ALLOWED_HOSTS = [u'192.168.0.3',
-		u'tum0xa.dlinkddns.com',
-		u'tigers-fur.ru',
+        u'tum0xa.dlinkddns.com',
+        u'tigers-fur.ru',
         u'localhost',
         u'127.0.0.1',
 ]
 
-		
-
-
 # Application definition
 
 INSTALLED_APPS = [
-	'main.apps.MainConfig',
-	'catalog.apps.CatalogConfig',
+    'main.apps.MainConfig',
+    'catalog.apps.CatalogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -99,6 +96,7 @@ WSGI_APPLICATION = 'tgs.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
+        #'ENGINE': 'django.db.backends.postgresql_psycopg2', #tried when static was not working
         'NAME': 'tgsdb',
         'USER' : 'tgs',
         'PASSWORD' : 'trewqa',
@@ -149,11 +147,22 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = '/home/tgs/work/tgs/static'
+# STATICFILES_DIRS = '/home/tgs/work/tgs/static',
+STATICFILES_FINDERS=[
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+]
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 
 # This try construction is tested and working
 # Soon we wil move SECRET_KEY, DATABASE, DEBUG, ALLOWED settings in local settings
 try:
     from .local_settings_rus import *
+    print('BASE_DIR=', BASE_DIR)
+    print('STATIC_ROOT', STATIC_ROOT)
 except ImportError:
     pass
+
