@@ -123,8 +123,7 @@
                             <i class="fa fa-angle-right"></i>
                             <ul>
                                 {% for subcategory in catalog.category_set.all %}
-                                <!-- <li>1</li>
-                                <li>2</li> -->
+                                
                                 <li>{{ subcategory.category_name }} {{ subcategory.name}}</li>
                                 {% endfor %}
 
