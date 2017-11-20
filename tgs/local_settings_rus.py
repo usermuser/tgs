@@ -23,3 +23,10 @@ directory in STATICFILES_DIRS. Your STATIC_ROOT directory should be empty
 and all static files should be collected into that directory (i.e., it should
  not already contain static files).
 '''
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
+    }
+}
+print('DATABASES variable set to use sqlite3')

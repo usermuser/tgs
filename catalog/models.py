@@ -7,8 +7,7 @@ from django.utils.encoding import python_2_unicode_compatible
 class Catalog(models.Model):
     name = models.CharField(max_length=255)
     slug = models.SlugField(max_length=150)
-    description = models.TextField()
-#    category = models.ManyToManyField(Category)
+    description = models.TextField(blank=True)
 
     class Meta:
         ordering = ('name',)
@@ -19,16 +18,17 @@ class Catalog(models.Model):
 
 @python_2_unicode_compatible
 class Product(models.Model):
+    catalog = models.ForeignKey(Catalog, on_delete=models.CASCADE)
     name = models.CharField(max_length=300)
     slug = models.SlugField(max_length=150)
-    description = models.TextField()
-    manufacturer = models.CharField(max_length=300, blank=True)
+    description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     available = models.BooleanField(default=True)
-    pic1 = models.ImageField(upload_to='products/Y%/m%/d%', blank=True)
-    pic2 = models.ImageField(upload_to='products/Y%/m%/d%', blank=True)
-    pic3 = models.ImageField(upload_to='products/Y%/m%/d%', blank=True)
-    catalog = models.ForeignKey(Catalog, on_delete=models.CASCADE)
+    male = models.BooleanField(default=False)
+    pic1 = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
+    pic2 = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
+    pic3 = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
+    
 
     class Meta:
         ordering = ('name',)
@@ -46,6 +46,8 @@ class Category(models.Model):
 #    catalog = models.ForeignKey('Catalog',on_delete=models.CASCADE,)
     class Meta:
         ordering = ('name',)
+        verbose_name = 'category'
+        verbose_name_plural = 'categories'
 
     def __str__(self):
         return self.name

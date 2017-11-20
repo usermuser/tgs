@@ -6,8 +6,8 @@ from . import views
 #app_name = 'catalog'
 urlpatterns = [
     # ex: /polls/
-#    url(r'^$', views.product_list, name='product_list'),
-    url(r'^$',views.index,name='index'),
+    url(r'^$', views.product_list, name='product_list'),
+    #url(r'^$',views.index,name='index'),
     #ex: some url example
     #url ???, views.
     # # ex: /polls/5/
