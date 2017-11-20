@@ -4,8 +4,10 @@ print('      settings')
 print('               loaded')
 
 STATIC_ROOT=''   #override STATIC_ROOT variable to enable local path to static
+print('empty STATIC_ROOT means that local_setting_rus loaded correctly')
 #STATICFILES_DIRS must be equal STATIC_ROOT = /home/user/work/tgs/static
 STATICFILES_DIRS = '/home/user/work/tgs/static','/home/tgs/work/tgs/static',
+print('STATICFILES_DIRS=' , STATICFILES_DIRS)
 
 ''' << ABOUT STATICFILES_DIRS >>
 https://stackoverflow.com/questions/12161271/can-i-make-staticfiles-dir-same-as-static-root-in-django-1-3

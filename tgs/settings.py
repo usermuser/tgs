@@ -167,6 +167,7 @@ try:
     from .local_settings_rus import *
     print('BASE_DIR=', BASE_DIR)
     print('STATIC_ROOT=', STATIC_ROOT)
+    
 except ImportError:
     pass
 
