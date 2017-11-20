@@ -13,18 +13,13 @@ from .models import Category
 #                    {'products': products})
 
 def index(request):
-	main_categories = Catalog.objects.all()
+    main_categories = Catalog.objects.all()
+    template = loader.get_template('catalog/index.html')
+
+    context = {
+    'main_categories' : main_categories,
+#   'SOME SUBCATEGORY': SUBCATEGORY,
+    }
+    return HttpResponse(template.render(context,request))
 
 
-
-
-
-
-
-	template = loader.get_template('catalog/index.html')
-
-	context = {
-	'main_categories' : main_categories,
-#	'SOME SUBCATEGORY': SUBCATEGORY,
-	}
-	return HttpResponse(template.render(context,request))

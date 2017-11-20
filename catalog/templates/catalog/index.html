@@ -121,7 +121,7 @@
                         <li>
                             <a href="catalog-list.html"> {{ catalog.name}}</a>
                             <i class="fa fa-angle-right"></i>
-                            <ul>
+                            <ul class="topcatalog-list">
                                 {% for subcategory in catalog.category_set.all %}
                                 
                                 <li>{{ subcategory.category_name }} {{ subcategory.name}}</li>
