@@ -1,2 +1,4 @@
 *.swp
 *.py.swp
+*.pyc
+tgs/local_settings_rus.py

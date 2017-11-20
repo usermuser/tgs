@@ -147,12 +147,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 #STATIC_ROOT = '/home/tgs/work/tgs/static'
 # STATICFILES_DIRS = '/home/tgs/work/tgs/static',
-STATICFILES_FINDERS=[
-    'django.contrib.staticfiles.finders.FileSystemFinder',
-    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
-]
+
+# STATICFILES_FINDERS=[
+#     'django.contrib.staticfiles.finders.FileSystemFinder',
+#     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+# ]
+
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
@@ -162,7 +166,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 try:
     from .local_settings_rus import *
     print('BASE_DIR=', BASE_DIR)
-    print('STATIC_ROOT', STATIC_ROOT)
+    print('STATIC_ROOT=', STATIC_ROOT)
 except ImportError:
     pass
 
