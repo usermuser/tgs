@@ -25,8 +25,10 @@ class Product(models.Model):
     manufacturer = models.CharField(max_length=300, blank=True)
     price = models.DecimalField(max_digits=8, decimal_places=2)
     available = models.BooleanField(default=True)
-#    catalog = for Key
-#   category = for key
+    pic1 = models.ImageField(upload_to='products/Y%/m%/d%', blank=True)
+    pic2 = models.ImageField(upload_to='products/Y%/m%/d%', blank=True)
+    pic3 = models.ImageField(upload_to='products/Y%/m%/d%', blank=True)
+    catalog = models.ForeignKey(Catalog, on_delete=models.CASCADE)
 
     class Meta:
         ordering = ('name',)
@@ -47,3 +49,5 @@ class Category(models.Model):
 
     def __str__(self):
         return self.name
+
+
